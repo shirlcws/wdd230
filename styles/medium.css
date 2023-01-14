@@ -1,0 +1,17 @@
+/* 'medium' media query */
+@media only screen and (min-width: 32.5em){
+    
+h1 {
+    color: blue;
+             } 
+            
+header { 
+    width: 75%;
+}
+        } 
+        
+footer {
+    width: 75%;
+}
+         
+        

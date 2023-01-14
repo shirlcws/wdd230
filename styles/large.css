@@ -1,0 +1,15 @@
+  /* 'medium' media query */
+@media screen and (min-width: 640px) {
+
+    h1 {
+        color: red;
+        font-size: 3rem;
+             } 
+
+header {
+    width: 100%;
+}
+footer {
+    width: 100%
+}
+            }  
