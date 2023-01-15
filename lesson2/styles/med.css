@@ -1,0 +1,14 @@
+ /* 'large' media query */
+ @media screen and (min-width: 32.5em) {
+
+    h1 {
+        color: blue;
+        font-size: 3rem;
+             } 
+
+             body {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+             }
+             
+            }

@@ -1,4 +1,4 @@
-  /* 'medium' media query */
+  /* 'large' media query */
 @media screen and (min-width: 640px) {
 
     h1 {
@@ -6,10 +6,13 @@
         font-size: 3rem;
              } 
 
-header {
-    width: 100%;
+
+ ul {
+    /* text-align: center; */
+    justify-content: center;
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
 }
-footer {
-    width: 100%
-}
+
             }  
