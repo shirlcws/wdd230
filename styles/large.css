@@ -1,25 +1,22 @@
-  /* css-portal pg'desktop' media query */
+/* css-portal pg'desktop' media query */
 @media screen and (min-width: 60em) {
+  h1 {
+    font-size: 3rem;
+    padding-left: 1rem;
+  }
+  header {
+    flex-direction: row;
+    max-width: 920px;
+  }
 
-    h1 {
-        
-        font-size: 3rem;
-        padding-left: 1rem;
-             } 
-header {
-      flex-direction: row;
-      max-width: 920px;
-}
-
- ul {
-    
+  ul {
     justify-content: center;
     width: 70%;
     padding: 0;
     margin: 0 auto;
+  }
+  footer {
+    font-size: 1rem;
+    max-width: 920px;
+  }
 }
-footer {
-  font-size: 1rem;
-  max-width: 920px;
-}
-              }  

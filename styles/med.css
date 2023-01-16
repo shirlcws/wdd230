@@ -1,20 +1,16 @@
- /*css-portal pg 'medium' media query */
- @media screen and (min-width: 32.5em) {
-
-main .hierarchy {
+/*css-portal pg 'medium' media query */
+@media screen and (min-width: 32.5em) {
+  main .hierarchy {
     display: block;
-}
+  }
 
-header {
-  flex-direction: row;
-  max-width: 59em;
-  padding-bottom: .5rem;
-}
-   h1 {
+  header {
+    flex-direction: row;
+    max-width: 59em;
+    padding-bottom: 1.5rem;
+  }
+  h1 {
     font-size: 2.5rem;
-    padding-left: .5rem;
-   }
+    padding-left: 0.5rem;
+  }
 }
-             
- 
-                      
