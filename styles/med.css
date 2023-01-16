@@ -1,6 +1,18 @@
-/* 'medium' media query */
-@media screen and (min-width: 32.5em){
-    
-              
+ /*css-portal pg 'medium' media query */
+ @media screen and (min-width: 32.5em) {
+
+main .hierarchy {
+    display: block;
+}
+
+header {
+  flex-direction: row;
+  max-width: 59em;
+}
+   h1 {
+    font-size: 50%;
+   }
+}
+             
  
-                            
+                      
