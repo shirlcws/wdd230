@@ -21,7 +21,7 @@ header {
   display: flex;
   flex-direction: column;
 padding-top: 2rem;
-  max-width: 700px;
+  max-width: 32em;
   
     justify-content: center;
   align-items: center;

@@ -8,9 +8,11 @@ main .hierarchy {
 header {
   flex-direction: row;
   max-width: 59em;
+  padding-bottom: .5rem;
 }
    h1 {
-    font-size: 50%;
+    font-size: 2.5rem;
+    padding-left: .5rem;
    }
 }
              
