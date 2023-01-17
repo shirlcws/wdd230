@@ -1,1 +1,1 @@
-document.getElementById("design").innerHTML = document.lastModified;
+document.getElementById("demo").innerHTML = document.lastModified;
