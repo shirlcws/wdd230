@@ -1,12 +1,8 @@
 /* 'large' media query for lesson 2*/
-@media screen and (min-width: 60em) {
-  /* h1 {
-        color: red;
-        font-size: 3rem;
-             }  */
-
+@media screen and (min-width: 600px) {
+  
   main {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr 1fr;
   }
   .white-space h3 {

@@ -1,12 +1,15 @@
 /* 'med' tablet view media query for lesson 2*/
-@media screen and (min-width: 32.5em) {
-  /* h1 {
-        color: blue;
-        font-size: 3rem;
-             }  */
-
+@media screen and (min-width: 37.5em) {
+ 
   main {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
+    
   }
+  .white-space {
+    display: block
+  }
+.golden-ratio {
+  grid-column: span 2;
+}
 }

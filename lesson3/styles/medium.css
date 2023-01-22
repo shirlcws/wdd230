@@ -1,0 +1,53 @@
+/* 'med' tablet view media query for lesson 2*/
+@media screen and (min-width: 37.5em) {
+
+h1 {
+    font-size: 1.5rem;
+}
+/* nav {
+    background-color: yellowgreen;
+} */
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+    /* justify-content: center; */
+    align-content: center;
+  
+}
+/* nav>* {
+    flex: 1 1 10px;
+} */
+nav a {
+    font-size: 1rem;
+    }
+    /* nav a:hover {
+        --d:75%;
+    } */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
+/* main picture {
+    grid-column: span 2;
+} */
+main picture img {
+    /* max-width: 100%; */
+    width: 900px;
+    
+    border: 1px solid black;
+}
+article:nth-child(2) {
+    display: block;
+}
+article:nth-child(3) {
+    display: block;
+}
+}
