@@ -1,11 +1,28 @@
 /* 'large' media query for lesson 2*/
-@media screen and (min-width: 600px) {
-  
-  main {
-    /* display: grid; */
+@media screen and (min-width: 60em) {
+  .grid-container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+   
   }
-  .white-space h3 {
-    padding-bottom: 0;
+
+  .white-space {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    margin-bottom: 2rem;
+  }
+ 
+    .hierarchy {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    margin-bottom: 2rem;
+  }
+  .golden-ratio {
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    margin-top: 2rem;
   }
 }
+
+

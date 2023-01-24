@@ -30,13 +30,11 @@ header {
     background-color: #025159;
     border: 1px solid black;
 }
-
-
   
   nav { 
     background-color: #a67458;
     margin: 0 auto;
- max-width: 980px; 
+ /* max-width: 980px;  */
   box-shadow: 0 5px 5px #000000; 
 }
 nav ul {
@@ -66,13 +64,12 @@ nav a:active {
 
 }
 main {
-    display: grid;
-    grid-template-columns: 1fr;
+     display: grid;
+     grid-template-columns: 1fr;
     font-size: .8rem;
-    max-width: 980px;
+    /* max-width: 980px; */
 } 
     main article {
-       
         margin: 1rem;
         border: 1px solid rgb(0, 0, 0);
         padding: 1rem;
@@ -84,7 +81,7 @@ picture {
     box-shadow: 0 2px 2px gray;
 }
 footer {
-    max-width: 980px;
+    /* max-width: 980px; */
     display: flex;
     flex-flow: column;
     margin: 0 auto;
