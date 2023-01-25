@@ -1,5 +1,5 @@
 /* 'small' mobile view for lesson 2*/
- /* @media (min-width: 300px) {  */
+ /* @media (min-width: 320px) {   */
 * {
   margin: 0;
   padding: 0;
@@ -122,4 +122,3 @@ p {
   background-color: rgba(128, 128, 128, 0.217);
   border: solid 1px grey;
 }
- 
