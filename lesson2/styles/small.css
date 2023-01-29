@@ -1,5 +1,5 @@
 /* 'small' mobile view for lesson 2*/
- /* @media (min-width: 320px) {   */
+ @media (min-width: 320px) {  
 * {
   margin: 0;
   padding: 0;
@@ -39,13 +39,13 @@ p {
   font-weight: 100;
   font-size: large;
 }
-.grid-container {
+/* .grid-container {
     display: grid;
   grid-template-columns: 1fr;
     grid-row-gap: 5px;
   
   
-} 
+}  */
  header {
   width: 100%;
   display: flex;
@@ -121,4 +121,5 @@ p {
     height: auto;
   background-color: rgba(128, 128, 128, 0.217);
   border: solid 1px grey;
+}
 }

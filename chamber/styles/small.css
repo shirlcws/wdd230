@@ -1,0 +1,117 @@
+/* prevents font size adjustments when orientation changes */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* applies natural box layout to all elements */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+h1,h2,h3,p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 2vw;
+    /* padding: 1rem; */
+}
+p,
+h4,
+h5,
+h5 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  
+}
+h3 {
+  padding-left: 2rem;
+}
+header {
+    /* width: auto; */
+    display: flex;
+    flex-flow: column;
+    
+    align-items: center;
+    text-align: center;
+    
+    padding: 0.5rem;
+    /* text-align: center; */
+        color: white;
+    background-color: #025159;
+    
+} 
+.date,
+div {
+  margin: 0.5rem;
+  border: 1px solid white;
+  padding: 0.75rem;
+  color: white;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+nav{
+background-color: #a67458;
+}
+/* nav ul means child of */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li a {
+    display: block;
+    /* padding: 0.80rem 2vw; */
+    text-decoration: none;
+    font-size: 1rem;
+        color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 1px #000000;
+  }
+  /* active code should be placed before hover */
+nav ul li.active a {
+    background-color: #025159;
+    color: #fff;
+  }
+  
+  nav ul li a:hover {
+    background-color: #c4eef2;
+    color: #025159;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  nav ul.open {
+    display: block;
+  }
+  
+  #hamburgerBtn span:nth-child(1) {
+    display: block;
+  }
+  #hamburgerBtn span:nth-child(2) {display: none;
+  }
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none;
+  }
+  #hamburgerBtn.open span:nth-child(2){display: block;
+  }
+.item {
+    background-color: #c4eef2;
+    color: #025159;
+    height: 200px;
+    border: 1px solid #025159;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+}

@@ -1,0 +1,43 @@
+/* 'large' media query for lesson 3*/
+@media screen and (min-width: 992px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 2em;
+       font-size: .8rem;
+       /* max-width: 980px; */
+   } 
+   main {
+    max-width: 1200px;
+    margin-top: .25rem;
+    min-height: auto;
+   }
+   header footer {
+    max-width: 1200px;
+   }
+  
+   article:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    /* background-color: cadetblue; */
+    display: block;
+}
+article:nth-child(2) {
+    /* display: block; */
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+article:nth-child(4) {
+    /* display: block; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+  
+}
+.grid-container {
+    
+       grid-template-rows: 1fr;
+       
+}
+}
