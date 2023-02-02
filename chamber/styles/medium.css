@@ -28,6 +28,7 @@ nav button {
   }
   nav ul li a {
     border: none;
+    padding: .5rem 1rem;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
 }

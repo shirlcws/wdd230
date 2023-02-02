@@ -36,7 +36,7 @@ header {
     
     align-items: center;
     text-align: center;
-    
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
     padding: 0.5rem;
     /* text-align: center; */
         color: white;
@@ -48,11 +48,18 @@ div {
   margin: 0.5rem;
   border: 1px solid white;
   padding: 0.75rem;
-  color: white;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  /* color: white; */
+ 
+}
+nav button {
+    font-size: 2.5rem;
+    background: transparent;
+    border: none;
 }
 nav{
 background-color: #a67458;
+font-family: 'IBM Plex Sans', sans-serif;
+padding-left: 1rem;
 }
 /* nav ul means child of */
 nav ul {
@@ -62,12 +69,17 @@ nav ul {
   }
   nav ul li a {
     display: block;
-    /* padding: 0.80rem 2vw; */
+}
+nav ul li a {
+  border: none;
+  padding: .5rem 1rem;
     text-decoration: none;
+    padding: .8rem 2vw;
+    padding-left: .5vw;
     font-size: 1rem;
-        color: white;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 1px 1px #000000;
+    color: white;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 1px 1px #000000;  */
   }
   /* active code should be placed before hover */
 nav ul li.active a {
@@ -82,6 +94,8 @@ nav ul li.active a {
   
   nav ul {
     display: none;
+    padding: 0;
+    margin: 0;
   }
   nav ul.open {
     display: block;
