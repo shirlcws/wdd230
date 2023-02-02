@@ -3,12 +3,12 @@
 
 header {
     /* width: auto; */
-    display: flex;
+    /* display: flex;
     flex-flow: row;
       
     text-align: left;
     
-    padding: 0.80rem;
+    padding: 0.80rem; */
     /* text-align: center; */
         color: white;
     background-color: #025159;
@@ -31,6 +31,14 @@ nav button {
     padding: .5rem 1rem;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
-}
+ 
 
+
+
+footer {
+  display: flex;
+    flex-direction: row;
+    text-align: right;
+}
 /* } end medium  */
+}

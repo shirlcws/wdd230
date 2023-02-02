@@ -12,13 +12,17 @@ html {
     box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
-}
+  }
 h1,h2,h3,p {
     font-family: 'IBM Plex Sans', sans-serif;
     margin: 0 2vw;
-    /* padding: 1rem; */
-}
+   }
+   body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+   }
 p,
 h4,
 h5,
@@ -30,12 +34,11 @@ h3 {
   padding-left: 2rem;
 }
 header {
-    /* width: auto; */
+    
     display: flex;
     flex-flow: column;
-    
-    align-items: center;
-    text-align: center;
+     align-items: center;
+   justify-content: space-between;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     padding: 0.5rem;
     /* text-align: center; */
@@ -44,19 +47,23 @@ header {
     
 } 
 .date,
-div {
+
+
+  div {
   margin: 0.5rem;
   border: 1px solid white;
   padding: 0.75rem;
   /* color: white; */
  
 }
+
 nav button {
     font-size: 2.5rem;
     background: transparent;
     border: none;
 }
 nav{
+  
 background-color: #a67458;
 font-family: 'IBM Plex Sans', sans-serif;
 padding-left: 1rem;
@@ -65,7 +72,7 @@ padding-left: 1rem;
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    
   }
   nav ul li a {
     display: block;
@@ -111,21 +118,33 @@ nav ul li.active a {
   }
   #hamburgerBtn.open span:nth-child(2){display: block;
   }
-.item {
-    background-color: #c4eef2;
-    color: #025159;
-    height: 200px;
+main  {
+      color: #025159;
+    height: auto;
     border: 1px solid #025159;
 }
+#grid-container {
+   
+  border: 1px solid #025159;
+  background-color: white;
+ }
+#grid-container div {
+  border: 1px solid #025159;
+  /* background-color: #c4eef2; */
+}
 
+.spotlight-container {
 
-
+  display: flex;
+  
+}
 footer {
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
   align-items: center;
   background-color: black;
   color: white;
   font-size: 1rem;
   padding: 0.5rem;
+   
 }
