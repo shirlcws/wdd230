@@ -13,16 +13,16 @@
  main.target {
     padding-top: 5rem;
  }
- main.design {
+ main.design-container {
     display: grid;
  }
-   main.target h1 {
+   main.target-container h1 {
 grid-column-start: 1;
    grid-column-end: 4;
-   margin-top: -4rem;
+   
    
    }
-   main.home h1 {
+   main.home-container h1 {
     grid-column-start: 1;
     grid-column-end: 4;
    }

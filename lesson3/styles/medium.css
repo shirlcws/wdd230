@@ -39,9 +39,16 @@ main {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    /* grid-template-rows: auto; */
     }
-
+main.design-container {
+display: grid;
+grid-template-columns: 40% 60%;
+}
+main.design-container h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 h3.color {
     
     grid-column-start: 1;
@@ -49,6 +56,12 @@ h3.color {
         height: 2rem;
    
 }
+h3.logo {
+    margin-top: 3rem;
+  }
+  h3.color {
+    margin-left: 25rem;
+  }
 h3.f-types {
     height: 2rem;
     grid-column-start: 1;
@@ -57,9 +70,9 @@ h3.logo {
     grid-column-start: 1;
     grid-row-start: 1;
    }
-main h1 {
+main.home-container h1 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
        height: 3rem;
        background-color: #7ab8bf;;
 }
@@ -69,13 +82,21 @@ section.picture {
     grid-column-end: 3;
     grid-row-start: 3;
 } 
+main.target-container h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
 
-article:nth-of-type(2) {
+}
+
+/* article:nth-of-type(2) {
        grid-column-start: 2;
     grid-row-start: 1;
         
+} */
+article:nth-of-type(3) {
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
-
   div .logo-box {
     padding-right: 15rem;
 
@@ -129,8 +150,8 @@ main.target h1 {
     width: 15rem;
     padding: .5rem;
    }
-      main.design {
+      main.design-container {
         max-width: 1200px;
-         margin: 0 auto;
+         margin: 0px auto;
       }
    }
