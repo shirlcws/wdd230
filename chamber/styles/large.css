@@ -8,10 +8,16 @@
         padding: .5rem 1rem;
     }   
    
-}
+
 #grid-container {
     
     grid-template-columns: repeat(6, 1fr);
   }
+  .spotlight-container {
 
+    display: flex;
+    flex-direction: row;
+    
+  }
+}
 /* end large */

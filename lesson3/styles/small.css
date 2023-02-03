@@ -59,7 +59,7 @@ nav {
   flex: 1 1 auto;
   margin: 0;
   padding: 0;
-  background-color: #a67458;
+  background-color: #a67558fc;
   margin: 0 auto;
   width: 100%;
   box-shadow: 0 5px 5px #000000;
@@ -179,6 +179,7 @@ div.color-box {
 .item:nth-of-type(1) {
   padding: 1rem;
   color: white;
+  font-weight: 800;
   width: 5rem;
   background-color: #025159;
   box-shadow: 0 0.15px 1px gray;
@@ -186,6 +187,7 @@ div.color-box {
 .item:nth-of-type(2) {
   padding: 1rem;
   color: white;
+  font-weight: 800;
   width: 5rem;
   background-color: #7ab8bf;
   box-shadow: 0 0.15px 1px gray;
@@ -193,6 +195,7 @@ div.color-box {
 .item:nth-of-type(3) {
   padding: 1rem;
   color: #025159;
+  font-weight: 800;
   width: 5rem;
   background-color: #c4eef2;
   box-shadow: 0 0.15px 1px gray;
@@ -200,6 +203,7 @@ div.color-box {
 .item:nth-of-type(4) {
   padding: 1rem;
   color: white;
+  font-weight: 800;
   width: 5rem;
   background-color: #a67458;
   box-shadow: 0 0.15px 1px gray;
