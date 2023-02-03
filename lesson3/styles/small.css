@@ -177,7 +177,7 @@ div.color-box {
 }
 
 .item:nth-of-type(1) {
-  padding: 1rem;
+  padding: .5rem;
   color: white;
   font-weight: 800;
   width: 5rem;
@@ -185,15 +185,17 @@ div.color-box {
   box-shadow: 0 0.15px 1px gray;
 }
 .item:nth-of-type(2) {
-  padding: 1rem;
+  padding: .5rem;
   color: white;
   font-weight: 800;
+  
+  
   width: 5rem;
   background-color: #7ab8bf;
   box-shadow: 0 0.15px 1px gray;
 }
 .item:nth-of-type(3) {
-  padding: 1rem;
+  padding: .5rem;
   color: #025159;
   font-weight: 800;
   width: 5rem;
@@ -201,7 +203,7 @@ div.color-box {
   box-shadow: 0 0.15px 1px gray;
 }
 .item:nth-of-type(4) {
-  padding: 1rem;
+  padding: .5rem;
   color: white;
   font-weight: 800;
   width: 5rem;
