@@ -181,12 +181,12 @@ div.color-box {
   color: white;
   font-weight: 800;
   width: 5rem;
-  background-color: #025159;
+  background-color: black;
   box-shadow: 0 0.15px 1px gray;
 }
 .item:nth-of-type(2) {
   padding: .5rem;
-  color: white;
+  color: black;
   font-weight: 800;
   
   
