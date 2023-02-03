@@ -74,7 +74,7 @@ nav ul {
 
 nav ul li a {
   color: #ffff;
-  font-weight: 500;
+  font-weight: 800;
   text-align: center;
   padding: 0.65rem;
   text-decoration: none;
@@ -86,6 +86,7 @@ nav ul li a {
 nav ul li.active a {
   background-color:#a675584d;
   color: #025159;
+  font-weight: 800;
 }
 li {
     width: 100%;
