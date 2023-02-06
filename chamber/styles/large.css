@@ -1,23 +1,95 @@
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
-   main {
+@media only screen and (min-width: 62rem) {
+  body {
     max-width: 1200px;
     margin: 0 auto;
-   }
- nav ul li a {
-        padding: .5rem 1rem;
-    }   
    
-
-#grid-container {
-    
-    grid-template-columns: repeat(6, 1fr);
   }
-  .spotlight-container {
-
-    display: flex;
-    flex-direction: row;
-    
+ 
+  nav ul li a {
+    padding: 0.5rem 1rem;
   }
+   /* .grid-container {
+    
+    grid-template-columns: 1.5fr 6fr 1.75fr;
+    grid-template-rows: repeat(9, 1fr);
+    column-gap: 0.5rem;
+    height: auto;
+  } */
+  body {
+    background-color: pink;
+  }
+  header img {
+    width: 150px;
+  }
+  .spotlight {
+    grid-row-start: 1;
+    grid-row-end: 10;
+    grid-column-start: 10;
+    grid-column-end: 13;
+  }
+ 
+  div.spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+          } 
+  /* .spotlight-1, .spotlight-2, .spotlight-3 {
+    grid-column-start: 1;
+   grid-row: auto;
+     padding: .5rem;
+   } */
+   .spotlight-1 {
+    grid-column-start: 1;
+  
+    grid-row-start: 1;
+    
+    row-gap: 0.5rem;
+  }
+  .spotlight-2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .spotlight-3 {
+    grid-column-start: 1;
+    /* grid-column-end: 2; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: contents;
+  } */
+  
+  .hero {
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .event {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .news {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+  .weather {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .join {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 10;
+  } 
 }
-/* end large */
+/* } */
+/* end home page large */

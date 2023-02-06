@@ -1,25 +1,39 @@
 /* 35rem is also 560px when basefont is 16px */
-@media only screen and (min-width: 35rem) {
-
+@media only screen and (min-width: 32.5rem) {
+body {
+  max-width: 900px;
+  /* margin: 0 auto; */
+}
+/* .grid-container {
+      grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 0.5rem;
+  height: auto;
+}  */
 header {
     /* width: auto; */
-    /* display: flex;
-    flex-flow: row;
-      
-    text-align: left;
-    
-    padding: 0.80rem; */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    grid-template-rows: 
+    2fr 1fr;
+     text-align: left;
+    padding: 0.80rem; 
     /* text-align: center; */
         color: white;
     background-color: #025159;
-    
-} 
+   } 
+   header img {
+    width: 100px;
+  }
+  header p {
+    display: contents;
+    /* text-align: left; */
+  }
   /* this gets rid of the hamburger menu and changes
 the navigation from column to a row. */
 nav button {
     display: none;
   }
-
   nav ul#primaryNav {
     display: flex;
     /* justify-content: flex-start; (default is same as)*/
@@ -31,14 +45,74 @@ nav button {
     padding: .5rem 1rem;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
+  nav ul.open {
+    display: none;
+  }
+ body {
+    height: 100vh;
+    /* display: grid; */
+    /* grid-template-areas: 'header header header' 'hero hero hero''event event event' 'join' 'news''weather'; */
+    /* max-width: 63.99rem; */
+    margin: 0 auto;
+    background-color: yellow;
+       }
+  /* div.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr); 
+    /* height: auto; */
+  } */
+  
+ .hero {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
  
-
-
-
+ }
+ .news {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  
+ }
+ .event {
+   grid-row-start: 5;
+   
+    grid-column-start: 1;
+  grid-column-end: 8;
+   }
+   .spotlight {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 3;
+      }
+ .spotlight {
+  display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+     column-gap: .3rem;
+  padding: 0;
+ }
+ .join {
+  grid-column-start: 1;
+  grid-column-end: 13;
+grid-row-start: 4;
+ }
+ .spotlight-1, .spotlight-2, .spotlight-3 {
+ grid-row-start: 1;
+ grid-row-end: 3;
+  padding: .5rem;
+}
+.weather {
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 5;
+  
+}
 footer {
   display: flex;
     flex-direction: row;
     text-align: right;
 }
-/* } end medium  */
 }
+/* end home page medium */
