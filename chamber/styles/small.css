@@ -35,7 +35,7 @@ body {
 
 /* header,
 footer,
-nav, */
+nav,
 .hero,
 .event,
 .weather,
@@ -44,21 +44,20 @@ nav, */
 .spotlight {
   background-color: rgb(231, 230, 230);
   color: #fff;
-  padding: 20px;
+  
   border: gray 1px solid;
-}
+} */
 header {
-  grid-area: header;
-  background-color: #025159;
+    background-color: #025159;
   color: white;
   display: grid;
   grid-template-columns: 2fr 4fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  /* grid-template-rows: 2fr 1fr; */
   /* flex-flow: column;
      align-items: center;
    justify-content: center; */
   font-family: "IBM Plex Sans Condensed", sans-serif;
-  /* padding: 0.5rem; */
+  padding: 0.5rem;
 }
 header img {
   width: 75px;
@@ -152,24 +151,28 @@ body {
   background-color: white;
 }
 
-.content > main {
+/* .content > main {
   background-color: #c4eef2;
-}
-.content {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  height: 100vh;
+} */
+/* #grid-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+   padding: .05rem;
+  row-gap: .5em;
+  height: 100vh; */
+  /* font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 100vh; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: repeat(4, 1fr); */
   /* grid-row-gap: 0.5rem; */
   /* padding: .5rem; */
-  grid-template-areas:
+  /* grid-template-areas:
     "header"
     "nav "
     "main"
-    "footer";
-}
+    "footer"; */
+/* } */
 
 .hero,
 .event,
@@ -178,24 +181,26 @@ body {
 .join,
 .spotlight {
   background-color: rgb(231, 230, 230);
+  color: black;
   /* height: 100px; */
   border: gray 1px solid;
   padding: 0.5rem;
 }
 main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
-} 
+   display: grid;
+  grid-column: 1 / 1; 
+  /* grid-template-rows: repeat(6, 1fr);  */
+  color: #025159;
+  border: .5rem solid #025159;
+}  
 
 .spotlight {
   height: 200px;
 }
 .spotlight {
-  grid-area: spotlight;
+  /* grid-area: spotlight; */
   grid-column: 1 / 1;
-  grid-row: 5 / 6;
+  gap: .5rem;
 }
 .spotlight-1,
 .spotlight-2,
@@ -208,33 +213,33 @@ main {
   height: 0px;
 }
 .join {
-  grid-area: join;
-  grid-column: 1/1;
-  grid-row: auto;
+  /* grid-area: join; */
+  grid-column: 1 / 1;
+  /* grid-row: 6 / 7; */
 }
 .weather {
-  grid-area: spotlight;
-  grid-column: 1/1;
-  grid-row: auto;
+  /* grid-area: weather; */
+  grid-column: 1 / 1;
+  /* grid-row: 3 / 4; */
 }
 .news {
-  grid-area: news;
-  grid-column: 1/1;
-  grid-row: auto;
+  /* grid-area: news; */
+  grid-column: 1 / 1;
+  /* grid-row: 4 / 5; */
 }
 .event {
-  grid-area: event;
-  grid-column: 1/1;
-  grid-row: auto;
+  /* grid-area: event; */
+  grid-column: 1 / 1;
+  /* grid-row: 2 / 3; */
 }
 .hero {
-  grid-area: hero;
-  grid-column: 1/1;
-  grid-row: 1 / 1;
+  /* grid-area: hero; */
+  grid-column: 1 / 1;
+  /* grid-row: 1 / 2; */
 }
 
 footer {
-  grid-area: footer;
+  /* grid-area: footer; */
   display: flex;
   flex-direction: column;
   align-items: center;
