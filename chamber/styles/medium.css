@@ -50,11 +50,9 @@ the navigation from column to a row. */
     grid-row: 2 / 3;
   }
   .spotlight {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
     grid-column: 1 / 4;
     grid-row: 3 / 4;
-    grid-column-gap: .5rem;
   }
   .event {
     grid-column: 1 / 4;
@@ -66,15 +64,22 @@ the navigation from column to a row. */
     grid-column: 1 / 4;
     grid-row: 4 / 5;
   }
+  .spotlight {   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr; 
+      column-gap: 0.3rem;
+      padding: 0;
+    } 
   .spotlight-1
     {
-   
     grid-column: 1 / 2;
     padding: 1rem;
-   
+    border: 1px solid rgba(0, 0, 0, 0.3);
   }
   spotlight-2 {
-    grid-column: 2 / 3 ; 
+    grid-column: 2 / 3;
+    padding: 1rem;
   }
 
   .weather {
@@ -87,6 +92,5 @@ the navigation from column to a row. */
     text-align: right;
   }
 
-  
 }
 /* end home page medium */
