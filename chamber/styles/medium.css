@@ -12,7 +12,9 @@ main {
   }
   header p {
     display: contents;
-    /* text-align: left; */
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    text-align: center;
   }
   /* this gets rid of the hamburger menu and changes
 the navigation from column to a row. */
@@ -48,8 +50,11 @@ the navigation from column to a row. */
     grid-row: 2 / 3;
   }
   .spotlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+    grid-column-gap: .5rem;
   }
   .event {
     grid-column: 1 / 4;
@@ -59,16 +64,19 @@ the navigation from column to a row. */
  
   .join {
     grid-column: 1 / 4;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
   }
-  .spotlight-1,
-  .spotlight-2
-   {
-    grid-column: 1 / 4;
-    grid-row: 1 / 4;
+  .spotlight-1
+    {
+   
+    grid-column: 1 / 2;
     padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+   
   }
+  spotlight-2 {
+    grid-column: 2 / 3 ; 
+  }
+
   .weather {
     grid-column: 3 / 4;
     grid-row: 5 / 6;
@@ -78,13 +86,7 @@ the navigation from column to a row. */
     flex-direction: row;
     text-align: right;
   }
-  .spotlight {
-    display: flex;
-    flex-direction: row;
-    /* grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr; */
-    column-gap: 0.3rem;
-    padding: 0;
-  }
+
+  
 }
 /* end home page medium */
