@@ -95,9 +95,9 @@ document.getElementById("currentdate").textContent = currentdate;
     const linkPara = document.querySelector('p');//p already exist, now we are just adding text to it. 
     linkPara.appendChild(text);// Now we're taking the two things we created,(p from above) and merging Linkpara with it together. 
 
-    // sect.appendChild(linkPara);//now we're adding the paragraph to the section. 
+    sect.appendChild(linkPara);//now we're adding the paragraph to the section. 
     // linkPara.remove();
  
-    const link = document.querySelector('a');
-    link.textContent = 'Mozilla Developer Network';
-    link.href = 'https://developer.mozilla.org';
+    // const link = document.querySelector('a');
+    // link.textContent = 'Mozilla Developer Network';
+    // link.href = 'https://developer.mozilla.org';
