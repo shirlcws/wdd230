@@ -39,7 +39,7 @@ header {
     background-color: #025159;
   color: white;
   display: grid;
-  grid-template-columns: 2fr 4fr 1fr 1fr auto;
+  grid-template-columns: 2fr 4fr 1fr;
   grid-template-rows: 40% 30% 20%;
   /* flex-flow: column;
      align-items: center;
@@ -47,8 +47,13 @@ header {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   padding: 0.5rem;
 }
-header img {
-  width: 100px;
+.logo-image {
+width: 100px
+}
+.social {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+ 
 }
 header h1 {
   grid-column: 2 / 3;
@@ -58,11 +63,12 @@ header h1 {
 }
 header p {
   grid-column: 2 / 3;
+
   font-size: x-small;
 }
 
 .date {
-  grid-column: 1 / 7;
+  grid-column: 1 / 4;
   grid-row: 3;
   text-align: center;
   justify-content: center;
@@ -173,19 +179,25 @@ main {
   grid-row: 5 / 7;
   gap: .5rem;
   
+  
 }
 .spotlight-1 {
   grid-row: 1 / 2;
   border: gray 1px solid;
+  padding: .25rem;
 }
 .spotlight-2 {
   grid-row: 2 / 3;
   border: gray 1px solid;
+  padding: .25rem;
 }
 
 .spotlight-3 {
+  grid-row: 3 / 4;
+  border: gray 1px solid;
+  padding: .25rem;
   display: none;
-  height: 0px;
+ 
 }
 .join {
   /* grid-area: join; */

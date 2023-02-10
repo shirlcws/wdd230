@@ -11,13 +11,13 @@
     />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" /> 
+    <link rel="stylesheet" href="styles/large.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,17 +30,31 @@
     <link rel="icon" href="favicon10.ico" />
   </head>
   <body>
-    
     <header>
       <img
+        class="logo-image"
         src="images/chamberLogoOnWhite.svg"
         alt="Blackfoot Chamber logo image with acronym letters, B C C"
         width="150"
       />
-      <div class="social"><a href="https://facebook.com"></a></div>
-              <h1>Blackfoot Chamber of Commerce</h1>
-        <p>Serving Greater Blackfoot area since 1952</p>
-            <div class="date">Saturday, February 04, 2023</div>
+
+      <h1>Blackfoot Chamber of Commerce</h1>
+      <div class="social">
+        <div class="social-1">
+          <a href="https://facebook.com"
+            ><img src="images/facebook.png" alt="Facebook icon"
+          /></a>
+        </div>
+
+        <div class="social-2">
+          <a href="https://pinterest.com"
+            ><img src="images/pinterest.png" alt="Pinterest icon"
+          /></a>
+        </div>
+      </div>
+      <p>Serving Greater Blackfoot area since 1952</p>
+
+      <div class="date">Saturday, February 04, 2023</div>
     </header>
     <nav>
       <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -54,19 +68,19 @@
     </nav>
     <main>
       <!-- <div id="grid-container"> -->
-        <div class="hero">Hero with site name and call to action</div>
-        <div class="event">event</div>
-        <div class="weather">weather</div>
-        <div class="news">news release</div>
-        <div class="spotlight">
-          <div class="spotlight-1">spotlight 1</div>
-          <div class="spotlight-2">spotlight 2</div>
-          <div class="spotlight-3">spotlight 3</div>
-        </div>
-        <div class="join">join</div>
+      <div class="hero">Hero with site name and call to action</div>
+      <div class="event">event</div>
+      <div class="weather">weather</div>
+      <div class="news">news release</div>
+      <div class="spotlight">
+        <div class="spotlight-1">spotlight 1</div>
+        <div class="spotlight-2">spotlight 2</div>
+        <div class="spotlight-3">spotlight 3</div>
+      </div>
+      <div class="join">join</div>
       <!-- </div> -->
     </main>
-   
+
     <footer>
       <img
         src="images/chamberLogoOnWhite.svg"
@@ -82,7 +96,7 @@
         <span id="demo"></span>
       </p>
     </footer>
-  
+
     <script src="scripts/apps.js"></script>
   </body>
 </html>
