@@ -30,8 +30,9 @@ const button = document.querySelector('button');
 // //Add event listener for add button
 button.addEventListener('click', () => {
      if (input.value !== '') {
+          let chapter = input.value;
 
-     }
+    
      let myItem = input.value;
      input.value = '';
 
@@ -42,9 +43,10 @@ button.addEventListener('click', () => {
  listItem.appendChild(listText);
  listText.textContent = myItem;
  listItem.appendChild(listBtn);
+
  listBtn.textContent ='❌';
  list.appendChild(listItem);
-
+}
  listBtn.addEventListener('click', () => {
      list.removeChild(listItem);
  });
