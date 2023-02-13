@@ -33,7 +33,13 @@ body {
   background-color: white;
 }
 
+#info-banner {
+ display: none;
+  height: 1.5rem;
+  color:white;
+  background-color: #a67458;
 
+}
 header {
   height: 25vh;
     background-color: #025159;
@@ -208,6 +214,7 @@ main {
   /* grid-area: weather; */
   grid-column: 1 / 1;
   /* grid-row: 3 / 4; */
+  background-color: #c4eef2;
 }
 .news {
   /* grid-area: news; */

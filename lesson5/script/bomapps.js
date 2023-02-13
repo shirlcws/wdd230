@@ -40,16 +40,17 @@ button.addEventListener('click', () => {
  const listText = document.createElement('span');
  const listBtn = document.createElement('button');
 
- listItem.appendChild(listText);
  listText.textContent = myItem;
+ listItem.appendChild(listText);
+ 
  listItem.appendChild(listBtn);
 
  listBtn.textContent ='❌';
  list.appendChild(listItem);
-}
+
  listBtn.addEventListener('click', () => {
      list.removeChild(listItem);
  });
-
+}
  input.focus();
  });

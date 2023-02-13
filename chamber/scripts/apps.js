@@ -36,6 +36,19 @@ const fulldate = `${dayName}, ${day}  ${monthName} ${year}`;
 
 document.querySelector(".date").textContent = fulldate;
 
+// document.querySelector('div p')#info-banner = (dayName == 1 || dayName == 2) ? "block" : "none";
+            
+            if(d.getDay() == 1 || d.getDay() == 2) {
+				document.getElementById("info-banner").style.display="block";
+				
+			 } 
+             
+
+			//  const #info-banner = dayOfWeek == 1 || dayOfWeek == 6 ?{
+			//  document.getElementById("#info-banner")(display:"block");
+			// 	{			 
+			//   else  (display: "none");
+			//   })
 // for european/family history format with day FileSystemDirectoryEntry.
 // const datefieldUK =document.querySelector('div');
 // const datefield = document.querySelector(".date");
