@@ -32,17 +32,14 @@
   <body>
     <div id="info-banner"><p>🤝Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
     <header>
-      <img
-        class="logo-image"
-        src="images/chamberLogoOnWhite.svg"
-        alt="Blackfoot Chamber logo image with acronym letters, B C C"
-        width="150"
-      />
+      <img class="logo"
+      src="images/chamberLogoOnWhite.webp"
+      alt="Blackfoot Chamber logo image with acronym letters, B C C"/>
 
       <h1>Blackfoot Chamber of Commerce</h1>
       <div class="social">
         <div class="social-1">
-          <a href="https://facebook.com" target="_blank"
+          <a href="https://www.facebook.com/BlackfootChamber" target="_blank"
             ><img src="images/facebook.png" alt="Facebook icon"
           /></a>
         </div>
@@ -69,9 +66,19 @@
     </nav>
     <main>
       <!-- <div id="grid-container"> -->
-      <div class="hero">Hero with site name and call to action</div>
+      <div class="hero"><picture class="myPhoto"><source srcset="images/wdd230-org.-500px.jpg" media="(min-width:500px) and (max-width: 799px"><source srcset="images/wdd230-org-800px.jpg" media="(min-width:800px)"><img src="images/wdd230-org-250px.jpg" alt="three people in a meeting"></picture>Hero with site name and call to action
+        <section class="stats">
+          <h2>Meet Me Mew</h2>
+          <p>Name: <span id="name">Tasha</span></p>
+          <p>Gender: <span id="gender">Female</span></p>
+          <p>Age: <span id="age">2.5</span></p>
+          <p>Shots?: <span id="shots">Yes</span></p>
+        </section></div>
       <div class="event">event</div>
-      <div class="weather"><h2 class="weather-info">Weather</h2><img class="weather-img" src="images/moonStars.png" alt="image of moon and stars"></div>
+      <div class="weather"><h2 class="weather-info">Weather</h2> <div class="windChill">Temperature: <input type="text" id="temp1" style="width: 50px" /> Wind
+        Speed: <input type="text" id="wspeed1" style="width: 50px" />
+        <button type="button" onclick="doInputOutput()">Wind Chill</button>
+        <div id="output"></div></div><img class="weather-img" src="images/moonStars.png" alt="image of moon and stars"></div>
       <div class="news">news release</div>
       <div class="spotlight">
         <div class="spotlight-1">spotlight 1</div>
@@ -84,20 +91,22 @@
 
     <footer>
       <img
-        src="images/chamberLogoOnWhite.svg"
+        src="images/chamberLogoOnWhite.webp"
         alt="Blackfoot Chamber logo image with acronym letters, B C C"
         width="150"
       />
       <p>
-        Blackfoot Chamber of Commerce<br />1234 Burdock Street Units abc<br />Blackfoot,
+        Blackfoot Chamber of Commerce <br> 1234 Burdock Street Units abc Blackfoot,
         Idaho USA 83221
       </p>
       <p>
-        &copy; 2023 | Shirley Christensen | Idaho <br />Last Updated:
+        &copy; 2023 | Blackfoot Chamber | Shirley Christensen | wdd 230 project | Last Modified:
         <span id="demo"></span>
       </p>
+      <p>info@Blackfootcc.org +(123) 1234-1234</p>
     </footer>
 
     <script src="scripts/apps.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>

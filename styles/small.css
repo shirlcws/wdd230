@@ -74,8 +74,11 @@ header {
 main {
   align-items: center;
   justify-content: center;
-  max-width: 700px;
+  
 }
+
+
+
 
 footer {
   max-width: 700px;

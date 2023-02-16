@@ -1,0 +1,31 @@
+/*35rem is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+nav button {
+    display: none;
+}
+nav ul#primaryNav {
+    /* adding #primaryNav to medium screen over-rules the small screen class to collapse menu 
+    if more items are added to the menu, you can increase the medium min-width ie. 40rem*/
+    display: flex;
+    /* justify-content: center; */
+    /* we could set the justify-content to flex-end which is flex-start by default */
+    margin-left: 2vw;
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+/* nav ul li a {
+    border: none;
+    border-left: 1px solid rgba(0,0,0,0.3);
+} */
+
+nav ul {
+    display: flex;
+    margin-left: 2vw;
+}
+
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3)
+
+}
+
+} /* end medium */
