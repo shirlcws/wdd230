@@ -309,3 +309,8 @@ footer p:nth-of-type(3) {
   
 }
 /* end home page small */
+/* beg of discover page */
+#discover {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
