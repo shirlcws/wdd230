@@ -1,4 +1,5 @@
 //get imgs attributed as data-src
+//code is from mdn web docs
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 // optional parameters for intersectionalObserver

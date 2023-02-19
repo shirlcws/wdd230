@@ -71,3 +71,58 @@ function toggleMenu() {
 
 const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
+
+
+//get imgs attributed as data-src
+//doe is from mdn web docs
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+//optional parameters for intersectionalObserver
+const imgOptions = {
+	threshold: 1,
+	rootMargin: "0px 0px -10px 0px"
+};
+
+const loadImages = (image) => {
+	image.setAttribute('src', image.getAttribute('data-src'));
+	image.onload = () => {image.removeAttribute('data-src');};
+};
+//check to see that Intersection Observer is supported
+if ("IntersectionObserver" in window) {
+	const observer = new IntersectionObserver((items, observer) => {
+		items.forEach((item) => {
+			if (item.isIntersecting) {
+				loadImages(item.target);
+				observer.unobserve(item.target);
+			}
+		});
+	});
+	imagesToLoad.forEach((img) => {
+		observer.observe(img);
+	});
+} else {
+	imagesToLoad.forEach((img) => {
+		loadImages(img);
+	});
+}
+
+//initialize display elements
+const todayDisplay = document.querySelector("#today");
+const visitsDisplay = document.querySelector("#visits");
+const daysLeftOutput = document.querySelector("#daysleft");
+
+//get the stord value in localStorage
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+//Using the Numbe() function ensures that if the storage item does not exist, it will be converted into a zero (0) which helps
+//on the if block Condition.
+
+//determine if this is the first visit or display the number of visits.
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = 'This is your first visit!';
+
+}
+numVisits++;
+
+

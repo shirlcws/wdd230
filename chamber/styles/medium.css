@@ -4,7 +4,7 @@
     max-width: 900px;
     /* margin: 0 auto; */
     /* height: 100vh; */
-    background-color: yellow;
+    /* background-color: yellow; */
   }
 main {
   
@@ -38,6 +38,13 @@ main {
   grid-column: 2 / 3;
   padding: .25rem;
 }
+
+header img.logo {
+  width: 5rem;
+}
+header img {
+  width: 3rem;
+}
   /* this gets rid of the hamburger menu and changes
 the navigation from column to a row. */
   nav button {
@@ -62,12 +69,7 @@ the navigation from column to a row. */
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
-  .stats {
-    
-    top: 550px;
-    right: 20px;
-    left: 450px;
-  }
+
  
   .news {
     grid-column: 1 / 4;
@@ -145,4 +147,8 @@ border-top: 1px solid transparent;
 }
 /* end home page medium */
 /* beg of discover page */
-.hover:hover {box-shadow: 0 0 50px #333;}
+/* hover affect from Brother Blazzards Codepen */
+
+#discover img.hover:hover {
+  box-shadow: 0 0 50px #333;
+}

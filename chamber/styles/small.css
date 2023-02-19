@@ -56,7 +56,7 @@ header {
 
 .social {
   grid-column: 3 / 4;
-  grid-row: 1 / 2;
+  grid-row: 1 / 3;
  
 }
 #primaryNav {
@@ -88,8 +88,11 @@ header p {
   
   
 }
-header .logo {
-  width: 75%;
+header img.logo {
+  width: 3.5rem;
+}
+header img {
+  width: 1.75rem;
 }
 nav button {
   font-size: 2.5rem;
@@ -202,21 +205,7 @@ main {
   margin: 0;
   color: white;
 }
-.stats {
-  position: absolute;
-  top: 375px;
-  left: 20px;
-  background: radial-gradient(#333, #9eb4e0);
-  border: 1px solid rgba(0,0,0.1);
-  padding: .15rem;
-  box-shadow: 0 0 30px #333;
-  opacity: 0.8;
-}
-.stats span {
-  font-style: italic;
-  font-weight: 700;
-  color: white;
-}
+
 .event {
   
   grid-column: 1 / 1;
@@ -311,6 +300,21 @@ footer p:nth-of-type(3) {
 /* end home page small */
 /* beg of discover page */
 #discover {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+ display: block;
+ 
+}
+
+  main#discover img {
+    width: 100%;
+  } 
+main#discover {
+  padding: 0;
+  min-height: 10rem;
+}
+main#discover h2 {
+  text-align: center;
+
+}
+iframe {
+  width:100%;
 }
