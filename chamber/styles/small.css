@@ -321,3 +321,6 @@ iframe {
 /* main#discover picture img:hover {
   box-shadow: 0 0 50px #333;
 } */
+footer a {
+  background-color: white;
+}
