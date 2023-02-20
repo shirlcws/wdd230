@@ -149,6 +149,7 @@ border-top: 1px solid transparent;
 /* beg of discover page */
 /* hover affect from Brother Blazzards Codepen */
 
-#discover img.hover:hover {
+
+main#discover picture img:hover {
   box-shadow: 0 0 50px #333;
 }
