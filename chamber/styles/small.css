@@ -89,6 +89,9 @@ header img.logo {
 header img {
   width: 1.75rem;
 }
+#discover header.serve {
+  display: none;
+}
 nav button {
   font-size: 2.5rem;
   background: transparent;
@@ -188,7 +191,7 @@ body {
 main {
   display: grid;
   grid-column: 1 / 1;
-  grid-template-rows: repeat(5, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
   color: #025159;
   /* border: .5rem solid #025159; */
   margin: 1rem;
@@ -271,7 +274,9 @@ footer img {
   grid-row: 1 / 2;
   margin: 0 3rem 5rem 3rem;
 }
-
+footer a {
+  background-color: white;
+}
 footer p:nth-of-type(1) {
   grid-column: 1 / 5;
   grid-row: 3 / 4;
@@ -331,6 +336,13 @@ iframe {
 /* main#discover picture img:hover {
   box-shadow: 0 0 50px #333;
 } */
-footer a {
+/* footer a {
   background-color: white;
 }
+tbody {
+  font-size: 95%;
+  font-style: italic;
+}
+tfoot {
+  font-weight: bold;
+} */

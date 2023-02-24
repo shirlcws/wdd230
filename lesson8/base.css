@@ -1,0 +1,59 @@
+
+:root {
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    margin: 1rem auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+    }
+    caption {
+        padding: 1rem;
+        caption-side: bottom;
+        color: black;;
+        font-size: .85rem;
+      font-weight: 500;
+          }
+
+    
+    th, td {
+        padding: .5rem 1rem;
+        border: 1.5px solid rgba(128, 128, 128, 0.209);
+       
+            }
+    th {
+        background-color:  black;
+        font-weight:700 ;
+        font-size: 1rem;
+        color: white;
+        padding: 1rem;
+        
+            }
+           thead th:nth-child(2) {
+            background-color: rgb(67, 66, 66);
+            color: white;
+            border-collapse: collapse;
+           }
+           thead th:nth-child(3) {
+            background-color: rgb(67, 66, 66);
+            color: white;
+           }
+           thead th:nth-child(4) {
+            background-color: rgb(67, 66, 66);
+            color: white;
+           }
+    td {
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: rgba(128, 128, 128, 0.124);;
+    }
+    caption {
+        color:rgb(31, 31, 31);
+        
+    }
+   
