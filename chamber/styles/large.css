@@ -44,17 +44,22 @@ header p {
     text-align: left;
   }
  
-  main {
+  main #home{
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
   }
   .event {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-  .hero {
+  #home div.hero {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
+  }
+  .myPhoto img{
+    /* grid-column: 2 / 4; */
+    grid-row: 1;
+   
   }
  
   /* .spotlight {
