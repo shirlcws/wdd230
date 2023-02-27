@@ -357,7 +357,7 @@ form fieldset {
   border-radius: 10px;
   padding: .5rem 2%;
   font-family: "IBM Plex Sans Condensed", sans-serif;
-  background-color: #c4eef2;
+  background-color: #c4eef275;
 }
 form label.top-info, form div {
 display: block;
