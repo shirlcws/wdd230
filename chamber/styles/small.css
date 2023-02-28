@@ -337,9 +337,13 @@ iframe {
   background-color: #025159;
   color: white;
 }
+form label.sbs {
+  display: block;
+  font-size: .75rem;
+  padding: .75rem 0;
+}
 
-
-#join footer a {
+/* #join footer a {
   background-color: white;
 }
 tbody {
@@ -348,22 +352,105 @@ tbody {
 }
 tfoot {
   font-weight: bold;
-}
+} */
 
 /* ---------------- JOIN PAGE ------------------ */
+main#join {
+ font-family: "IBM Plex Sans Condensed", sans-serif;
+} 
 form fieldset {
   margin: 2rem 0;
-  border: 1px solid #025159;
+  border: .5px solid #025159;
   border-radius: 10px;
   padding: .5rem 2%;
-  font-family: "IBM Plex Sans Condensed", sans-serif;
+  
   background-color: #c4eef275;
 }
+
+form legend {
+  color:#025159;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
 form label.top-info, form div {
 display: block;
 padding-top: 1rem;
 color:#a67458;
 font-weight:bolder;
-
 font-size: .8rem;
 }
+
+form label.top-info input,
+form label.top-info select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #a67458;
+  border-radius: 4px;
+  padding: .75rem;
+  color:#025159;
+  width: 100%;
+  max-width: 20rem;
+  background-color: white;
+
+}
+
+form input.submit {
+  border: none;
+  background-color: #a67458;
+  color: white;
+  font-weight: bolder;
+  border-radius: .5rem;
+  padding: .75rem 1.5rem;
+  /* margin: 0 0 2rem 2%; */
+  width: 100%;
+  max-width: 20rem;
+  text-align: center;
+}
+form label.top-info input:required {
+  border-left: #025159 solid 6px;
+  }
+  form label.top-info input:required:valid {
+      border-left: #c4eef2 solid 6px;
+  }
+ table :root {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+
+  }
+  table {
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: #025159;
+    font-weight: 500;
+    font-size: .75rem;
+    color: white;
+    padding: .5rem;
+      }
+      tr {
+        display: table-row;
+      
+      }
+
+      thead th:nth-child(2) {
+        background-color:#02515950;
+        color: #025159;
+        font-weight: bolder;
+      }
+      thead th:nth-child(3) {
+        background-color:#02515950;
+        color: #025159;
+        font-weight: bolder;
+      }
+        thead th:nth-child(4) {
+          background-color:#02515950;
+          color: #025159;
+        font-weight: bolder;
+        }
+        thead th:nth-child(5) {
+          background-color:#02515950;
+          color: #025159;
+        font-weight: bolder;
+        }
+      

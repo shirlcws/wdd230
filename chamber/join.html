@@ -64,26 +64,95 @@
       </ul>
     </nav>
     <main id="join">
-      <h2>Blackfoot Chamber Membership Application</h2>
+      <h2>Blackfoot Chamber Membership</h2>
+      <table>
+        <caption>
+          * NP Membership is for non profit organizations and there is no fee
+        </caption>
+        <thead>
+          <tr>
+            <th colespan="5" scope="colgroup">Membership level Bemefits</th>
+          </tr>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">NP</th>
+            <th scope="col">Bronze</th>
+            <th scope="col">Silver</th>
+            <th scope="col">Gold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Newsletters</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            
+          </tr>
+          <tr>
+            
+            <td>Trainings</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            
+          </tr>
+          <tr>
+            
+            <td>Advertising</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+            
+          </tr>
+          <tr>
+            <td>Event discounts</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            
+          </tr>
+        </tbody>
+      </table>
+     
       <form method="get" action="thankyou.html">
        <fieldset>
-        <legend>Applicant Information</legend>
+        <legend>Applicant Information *required</legend>
         <label class="top-info">First Name* <input type="text" name="f-name" required/></label>
         <label class="top-info">Last Name* <input type="text" name="l-name" required/></label>
-        <label class="top-info">Title <input type="alpha" name="title"/></label>
+        <label class="top-info">Business position Title <input type="alpha" name="p-title"/></label>
+        <label class="top-info">Email* <input type="email" name="email" placeholder="somebody@gmail.com"
+          required
+      /></label>
         <label class="top-info">Cell Phone* <input type="tel" name="phone" placeholder="1235551234" required
       /></label>
-
+      <label class="top-info">Business Name Title* <input type="alpha" name="b-title" required/></label>
+        </fieldset>
+       <fieldset>
+        <legend>Membership Selection</legend>
+        <div>Membership Level</div>
+<label class="sbs">
+  <input type="radio" name="np-membership" value="NP Membership"/> NP Membership
+</label>
+<label class="sbs"><input type="radio" name="np-membership" value="NP Membership"/> NP Membership
+</label>
+<label class="sbs"><input type="radio" name="np-membership" value="NP Membership"/> NP Membership
+</label>
+<label class="sbs"><input type="radio" name="np-membership" value="NP Membership"/> NP Membership
+</label> 
        </fieldset>
-          <caption>
-            
-          </caption>
+         
          
           
       
 
-        <input type=""submit" value="Commit Member Choices" class="submit"/>
+        <input type="submit" value="Commit Member Choices" class="submit"/>
       </form>
+      
     </main>
     <footer>
       <img

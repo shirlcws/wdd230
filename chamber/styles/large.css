@@ -106,6 +106,12 @@ header p {
     height: 100%;
       
      }
+
+     form label.sbs {
+      
+      font-size: .75rem;
+      padding: .4rem 0;
+    }
 }
 /* } */
 /* end home page large */
