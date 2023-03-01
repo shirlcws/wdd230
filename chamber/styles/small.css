@@ -239,7 +239,7 @@ div.weather {
   background-color: #c4eef290;
   width: 99%;
   }
-  
+
 div.news {
   grid-column: 1 / 1;
   width: 99%;
@@ -390,11 +390,19 @@ tfoot {
 /* ---------------- JOIN PAGE ------------------ */
 main#join {
  font-family: "IBM Plex Sans Condensed", sans-serif;
- color: white;
+ color: #025159;
+ font-weight: bolder;
+
  
 } 
 #join h2 {
   background-color: #025159;
+  color: white;
+}
+
+label.sbs {
+  color: #025159;
+  font-weight: bolder;
 }
 fieldset {
  
