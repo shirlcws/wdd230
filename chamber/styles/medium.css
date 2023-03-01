@@ -12,6 +12,9 @@
   grid-auto-rows: minmax(100px, auto);
  
 } 
+#info-banner {
+  padding-top: 1rem;
+}
 /* med header */
   header {
     height: 17vh;
@@ -72,51 +75,72 @@ the navigation from column to a row. */
   #home div.hero {
     grid-column: 1 / 4;
     grid-row: auto;
+    text-align: center;
   }
 
  
-  .news {
+  div.news {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
   }
   
-  .spotlight {
+  div.spotlight {
+    display: grid;
     grid-column: 1 / 4;
     grid-row: 3 / 4;
   }
-  .spotlight {
-    display: grid;
+  div.spotlight {
+      
      grid-template-columns: 1fr 1fr;
      grid-template-rows: 1fr;
   }
-  .event {
-    grid-column: 1 / 4;
+  div.event {
+    grid-column: 1 / 3;
     grid-row: 5 / 6;
   }
   
  
-  .join {
+div.join-us {
     grid-column: 1 / 4;
-    grid-row: 4 / 5;
-  }
+    /* grid-row: 4 / 5; */
+    border-bottom: gray 1px solid;
+    margin: 1rem auto;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    text-align: center;
+    margin-top: 0;
+  
+     }
  
-  .spotlight-1
-    {
+  div.spotlight-1 {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 1 / 2; 
     height: 100%;
-    
-   
-   
+    padding: 0rem;
+        border-right: gray 1px solid;
+      
   }
-  .spotlight-2 {
+  .spotlight-1 img {
+    width: 60%;
+     
+   }
+  div.spotlight-2 {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 1 / 2; 
       height: 100%;
   }
-  
+  .spotlight-2 img {
+    width: 75%;
+     
+   }
+  .spotlight-3 {
+    /* grid-column: 3 / 4; */
+    display: none;
+    /* height: 100%; */
 
-  .weather {
+  padding: 0rem;
+  }
+  div.weather {
     grid-column: 3 / 4;
     grid-row: 5 / 6;
   }
@@ -178,43 +202,22 @@ main#join {
 } 
 #join h2 {
   grid-column: 1 / 3;
+  grid-row: 1 / 2;
   margin: 0;
   text-align: center;
 }
-
-
-/* #home.hero {
-  grid-column: 1 / 2;
-  height: 2rem;
-  background-color: #025159;
-  margin: 0;
-  text-align:center;
-  padding-top: .25rem;
-  /* width: 100%; */
- 
-/* 
-
-#discover img:nth-child(1) {
+table {
+ margin: 1rem;
+ grid-column: 1 / 2;
+ height: 300px;
+ margin-top: .75rem;
+}
+#join caption {
   grid-column: 1 / 3;
 }
- main img:nth-child(2) {
-  grid-column: 1 / 2;
+#m-options {
+  height: 400px;
+  margin-top: 1.5rem;
 }
-main picture:nth-child(3) {
-  grid-column: 1 / 2;
 }
-picture.hover:nth-child(4) {
-  grid-column: 1 / 2;
-}
-picture.hover:nth-child(5) {
-  grid-column: 1 / 2;
-}
-picture.hover :nth-child(6) {
-  grid-column: 1 / 2;
-}
-#discover section p:nth-child(1) {
-  grid-column: 2 / 3;
-} */
-}
-
 

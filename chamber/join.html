@@ -65,13 +65,13 @@
     </nav>
     <main id="join">
       <h2>Blackfoot Chamber Membership</h2>
+      <fieldset id="m-options">
+        <legend>*NP = non profit organizations <br>in which there is no fee</legend>
       <table>
-        <caption>
-          * NP Membership is for non profit organizations and there is no fee
-        </caption>
+        
         <thead>
           <tr>
-            <th colespan="5" scope="colgroup">Membership level Bemefits</th>
+            <th colspan="5" scope="colgroup">Membership level Bemefits</th>
           </tr>
           <tr>
             <th scope="col"></th>
@@ -118,21 +118,21 @@
           </tr>
         </tbody>
       </table>
-     
+    </fieldset>
       <form method="get" action="thankyou.html">
-       <fieldset>
+       <fieldset class="app-info">
         <legend>Applicant Information *required</legend>
         <label class="top-info">First Name* <input type="text" name="f-name" required/></label>
         <label class="top-info">Last Name* <input type="text" name="l-name" required/></label>
-        <label class="top-info">Business position Title <input type="alpha" name="p-title"/></label>
+        <label class="top-info">Business position Title <input type="text" name="p-title"/></label>
         <label class="top-info">Email* <input type="email" name="email" placeholder="somebody@gmail.com"
           required
       /></label>
         <label class="top-info">Cell Phone* <input type="tel" name="phone" placeholder="1235551234" required
       /></label>
-      <label class="top-info">Business Name Title* <input type="alpha" name="b-title" required/></label>
+      <label class="top-info">Business Name Title* <input type="text" name="b-title" pattern="[A-Za-z- ]{7}" required/></label>
         </fieldset>
-       <fieldset>
+       <fieldset class="app-info">
         <legend>Membership Selection</legend>
         <div>Membership Level</div>
 <label class="sbs">
