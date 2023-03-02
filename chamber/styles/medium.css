@@ -6,52 +6,48 @@
     /* height: 100vh; */
     /* background-color: yellow; */
   }
-#home main {
-  
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
- 
-} 
-#info-banner {
-  padding-top: 1rem;
-}
-/* med header */
+  #home main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  #info-banner {
+    padding-top: 1rem;
+  }
+  /* med header */
   header {
     height: 17vh;
   }
- header h1 {
-  font-size: 1.25rem;
- }
- header p {
-  font-size: 1rem;
-  display: block;
- }
- 
- 
-.social {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  
-}
-.social-1 {
-  grid-column: 1 / 2;
-  padding: .25rem;
-}
-.social-2 {
-  grid-column: 2 / 3;
-  padding: .25rem;
-}
+  header h1 {
+    font-size: 1.25rem;
+  }
+  header p {
+    font-size: 1rem;
+    display: block;
+  }
 
-header img.logo {
-  width: 5rem;
-}
-header img {
-  width: 3rem;
-}
-header .serve {
-  display: block;
-}
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .social-1 {
+    grid-column: 1 / 2;
+    padding: 0.25rem;
+  }
+  .social-2 {
+    grid-column: 2 / 3;
+    padding: 0.25rem;
+  }
+
+  header img.logo {
+    width: 5rem;
+  }
+  header img {
+    width: 3rem;
+  }
+  header .serve {
+    display: block;
+  }
   /* this gets rid of the hamburger menu and changes
 the navigation from column to a row. */
   nav button {
@@ -78,29 +74,26 @@ the navigation from column to a row. */
     text-align: center;
   }
 
- 
   div.news {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
   }
-  
+
   div.spotlight {
     display: grid;
     grid-column: 1 / 4;
     grid-row: 3 / 4;
   }
   div.spotlight {
-      
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   div.event {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
   }
-  
- 
-div.join-us {
+
+  div.join-us {
     grid-column: 1 / 4;
     /* grid-row: 4 / 5; */
     border-bottom: gray 1px solid;
@@ -109,36 +102,32 @@ div.join-us {
     padding-right: 8rem;
     text-align: center;
     margin-top: 0;
-  
-     }
- 
+  }
+
   div.spotlight-1 {
     grid-column: 1 / 2;
-    grid-row: 1 / 2; 
+    grid-row: 1 / 2;
     height: 100%;
     padding: 0rem;
-        border-right: gray 1px solid;
-      
+    border-right: gray 1px solid;
   }
   .spotlight-1 img {
     width: 60%;
-     
-   }
+  }
   div.spotlight-2 {
     grid-column: 2 / 3;
-    grid-row: 1 / 2; 
-      height: 100%;
+    grid-row: 1 / 2;
+    height: 100%;
   }
   .spotlight-2 img {
     width: 75%;
-     
-   }
+  }
   .spotlight-3 {
     /* grid-column: 3 / 4; */
     display: none;
     /* height: 100%; */
 
-  padding: 0rem;
+    padding: 0rem;
   }
   div.weather {
     grid-column: 3 / 4;
@@ -147,77 +136,80 @@ div.join-us {
   footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 40% 30% 30%;
-    
   }
-footer img {
+  footer img {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+  footer p:nth-of-type(1) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    text-align: left;
+  }
+  footer p:nth-of-type(2) {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    text-align: left;
+  }
+  footer p:nth-of-type(3) {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    text-align: left;
+    border-top: 1px solid transparent;
+  }
+
+  /* end home page medium */
+  /* beg of discover page */
+  /* hover affect from Brother Blazzards Codepen */
+
+  main#discover picture img:hover {
+    box-shadow: 0 0 50px #333;
+  }
+  main#discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #discover div {
+    grid-column: 1 / 3;
+    height: 2rem;
+    background-color: #025159;
+    margin: 0;
+    text-align: center;
+    padding-top: 0.25rem;
+  }
+  main#join {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+  }
+  #join h2 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin: 0;
+    text-align: center;
+  }
+  table {
+    margin: 1rem;
+    grid-column: 1 / 2;
+    height: 300px;
+    margin-top: 0.75rem;
+  }
+  #join caption {
+    grid-column: 1 / 3;
+  }
+  #m-options {
+    height: 400px;
+    margin-top: 1.5rem;
+  }
+
+  /* #home.hero {
   grid-column: 1 / 2;
-  margin: 0;
-
-}
-footer p:nth-of-type(1) {
-  grid-column: 2 / 4;
-  grid-row: 1 / 2;
-  text-align: left;
-}
-footer p:nth-of-type(2) {
-  grid-column: 2 / 5;
-  grid-row: 3 / 4;
-  text-align: left;
-  
-}
-footer p:nth-of-type(3) {
-grid-column: 2 / 5;
-grid-row: 2 / 3;
-text-align: left;
-border-top: 1px solid transparent;
-}
-
-
-/* end home page medium */
-/* beg of discover page */
-/* hover affect from Brother Blazzards Codepen */
-
-
-main#discover picture img:hover {
-  box-shadow: 0 0 50px #333;
-}
-main#discover {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-} 
-#discover div {
-  grid-column: 1 / 3;
   height: 2rem;
   background-color: #025159;
   margin: 0;
-  text-align: center;
+  text-align:center;
   padding-top: .25rem;
+  /* width: 100%; */
+  /* main #discover {
+  position: relative;
+ } */
 }
-main#join {
-
-  /* display: grid; */
-  grid-template-columns: 1fr 1fr;
-
-} 
-#join h2 {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-  margin: 0;
-  text-align: center;
-}
-table {
- margin: 1rem;
- grid-column: 1 / 2;
- height: 300px;
- margin-top: .75rem;
-}
-#join caption {
-  grid-column: 1 / 3;
-}
-#m-options {
-  height: 400px;
-  margin-top: 1.5rem;
-}
-}
-
