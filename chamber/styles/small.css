@@ -211,9 +211,14 @@ main {
   
   /* grid-template-rows: repeat(5, 1fr); */
   color: #025159;
-  border: .5rem solid #025159;
-  
+  border-left: .5rem solid #025159;
+  border-right: .5rem solid #025159;
 }
+/* main#join {
+  display: grid;
+  margin: 0 auto;
+  padding; .5rem;
+} */
 
 div.hero {
   grid-column: 1 / 1;
@@ -482,7 +487,7 @@ form label.top-info input:required {
     font-weight: 500;
     font-size: .75rem;
     color: white;
-    padding: .5rem;
+    padding: .25rem;
       }
       tr {
         display: table-row;

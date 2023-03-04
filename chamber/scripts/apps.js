@@ -28,6 +28,9 @@ const d = new Date();
 const dayName = daynames[d.getDay()];
 const monthName = months[d.getMonth()];
 const year = d.getFullYear();
+// let hours = d.getHours();
+// let mins = d.getMinutes();
+// let seconds = d.getSeconds();
 let day = d.getDate();
 if (day < 10) {
 	day = `0${day}`
@@ -36,6 +39,8 @@ const fulldate = `${dayName}, ${day}  ${monthName} ${year}`;
 
 document.querySelector(".date").textContent = fulldate;
 
+// document.getElementById("dateStamp").value = d.toDateString();
+// document.getElementById("timeStamp").value = hours + " hours " + mins + " minutes " + seconds + " seconds";
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
