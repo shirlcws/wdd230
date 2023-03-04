@@ -169,10 +169,14 @@
         </fieldset>
         <fieldset class="app-info">
           <legend>Questions</legend>
-          <div>write message here:</div>
-          <label class="message">
-            <textarea id="messageArea" rows="8" cols="34"></textarea>
-          </label>
+
+          <label for="messageArea">write message here:</label>
+          <textarea
+            id="messageArea"
+            name="messageArea"
+            rows="8"
+            cols="34"
+          ></textarea>
         </fieldset>
         <input type="hidden" id="timeStamp" name="timeStamp" />
         <input type="submit" value="Commit Member Choices" class="submit" />
