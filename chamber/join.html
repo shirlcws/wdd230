@@ -75,7 +75,7 @@
               <th colspan="5" scope="colgroup">Membership level Bemefits</th>
             </tr>
             <tr>
-              <th scope="col">Services</th>
+              <th scope="col"></th>
               <th scope="col">NP</th>
               <th scope="col">Bronze</th>
               <th scope="col">Silver</th>
@@ -169,14 +169,16 @@
         </fieldset>
         <fieldset class="app-info">
           <legend>Questions</legend>
-
-          <label for="messageArea">write message here:</label>
+<div>write message here:</div>
+          <label class="message" label for="messageArea">
           <textarea
             id="messageArea"
             name="messageArea"
             rows="8"
             cols="34"
           ></textarea>
+        </label>
+       
         </fieldset>
         <input type="hidden" id="timeStamp" name="timeStamp" />
         <input type="submit" value="Commit Member Choices" class="submit" />
