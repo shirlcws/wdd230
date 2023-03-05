@@ -124,7 +124,8 @@
             >Last Name* <input type="text" name="l-name" required
           /></label>
           <label class="top-info"
-            >Business position Title <input type="text" name="p-title"
+            >Business position Title
+            <input type="text" name="p-title" pattern="[A-Za-z- ]{7, }"
           /></label>
           <label class="top-info"
             >Email*
@@ -143,9 +144,12 @@
             <input
               type="text"
               name="b-title"
+              <!--
               pattern="[A-Za-z- ]{7, }"
-              required
-          /></label>
+              --
+            />
+            required /></label
+          >
         </fieldset>
         <fieldset class="app-info">
           <legend>Membership Selection</legend>
@@ -169,16 +173,16 @@
         </fieldset>
         <fieldset class="app-info">
           <legend>Business Description</legend>
-<div> <label for="messageArea">Briefly describe your business:</label></div>
-         
+          <div>
+            <label for="messageArea">Briefly describe your business:</label>
+          </div>
+
           <textarea
             id="messageArea"
             name="messageArea"
             rows="8"
             cols="34"
           ></textarea>
-        
-       
         </fieldset>
         <input type="hidden" id="timeStamp" name="timeStamp" />
         <input type="submit" value="Commit Member Choices" class="submit" />

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,300&display=swap");
+/* font-family: 'Roboto', sans-serif; wt 100, 500, 900 & 300 italic*/
+
+body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+  
+}
+cards .section {
+    
+  object-position: 50% 50%;;
+}
+div.cards section {
+    background-color: rgb(102, 204, 204);
+    text-align: center;
+}
+section h2 {
+    /* background-color: aquamarine; */
+}
+
