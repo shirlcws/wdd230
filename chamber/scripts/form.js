@@ -9,4 +9,3 @@ document.getElementById('timeStamp').value = objDate.toISOString();
 
 
 let thankYou = document.querySelector("submit");
-let today

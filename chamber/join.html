@@ -137,17 +137,16 @@
           /></label>
           <label class="top-info"
             >Cell Phone*
-            <input type="tel" name="phone" placeholder="1235551234" required
+            <input
+              type="tel"
+              name="phone"
+              pattern="{0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="123-456-7890"
+              required
           /></label>
           <label class="top-info"
             >Business Name Title*
-            <input
-              type="text"
-              name="b-title"
-              <!--
-              pattern="[A-Za-z- ]{7, }"
-              --
-            />
+            <input type="text" name="b-title" />
             required /></label
           >
         </fieldset>
