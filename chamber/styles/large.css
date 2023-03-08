@@ -1,7 +1,7 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 62rem) {
   body {
-    max-width: 1200px;
+    max-width: 1280px;
     /* background-color: pink; */
     margin: 0 auto;
   }
@@ -136,6 +136,17 @@
   fieldset#m-options {
     margin: 1.5rem auto;
   }
+   /*--------------- main#directory ---------------*/
+ button#gallery {
+  padding: 1rem 11rem;
+  max-width: 550px;
+}
+button#list {
+  padding: 1rem 12rem;
+  max-width: 550px;
+  max-height: 65px;
+  
+}
 }
 /* } */
 /* end home page large */

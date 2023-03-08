@@ -215,4 +215,16 @@ th {
   /* main #discover {
   position: relative;
  } */
+
+ /*--------------- main#directory ---------------*/
+ button#gallery {
+  padding: 1rem 7.4rem;
+  max-width: 300px;
+}
+button#list {
+  padding: 1rem 7.5rem;
+  max-width: 300px;
+  max-height: 65px;
+  
+}
 }
