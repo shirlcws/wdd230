@@ -1,5 +1,5 @@
 /* prevents font size adjustments when orientation changes */
- html {
+html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -339,7 +339,6 @@ footer p:nth-of-type(3) {
   display: block;
 }
 
-
 main #discover {
   padding: 0;
   min-height: 10rem;
@@ -367,8 +366,6 @@ form label.sbs {
   font-size: 0.75rem;
   padding: 0.75rem 0;
 }
-
-
 
 /* ---------------- JOIN PAGE ------------------ */
 main#join {
@@ -490,7 +487,7 @@ fieldset.m-options {
 /* ----------- main#directory --------------  */
 
 div.menu {
-   align-items: center;
+  align-items: center;
   justify-content: center;
 
   margin: 1rem auto;
@@ -502,7 +499,6 @@ div.menu {
 }
 div.menu1 {
   display: flex;
-  
 }
 .menu button {
   /* padding: 1rem 6rem; */
@@ -511,7 +507,7 @@ div.menu1 {
   border: 1px solid #c4eef2;
   border-radius: 0.5rem;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 button#gallery {
   padding: 1rem 1.75rem;
@@ -519,20 +515,22 @@ button#gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
+ 
 }
 
 button#list {
   padding: 1rem 2.4rem;
   max-width: 150px;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 #directory section {
-  max-width: 360px;
-  max-height: 650px;
+
+}
+#directory div.gallery section {
+  /* max-width: 360px; */
+ /* max-height: 650px;   */
   margin: 0.25rem;
   padding: 0.35rem;
   background-color: white;
@@ -548,10 +546,11 @@ button#list {
 }
 section > p {
   min-height: 35px;
-  margin-left: .25rem;
+  margin-left: 0.25rem;
 }
-section > h3 {
+.gallery section > h3 {
   text-align: center;
+  font-weight: bold;
 }
 
 div.cards {
@@ -567,33 +566,40 @@ div.cards {
   display: flex;
   flex-direction: column;
 }
-.list section {
+/* below was overshooting on small view, so moved it to med */
+/* #directory div.list section {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   margin: 0;
-  padding: .25rem;
-
-}
+  padding: 0.25rem;
+}  */
 .list section > * {
   margin: 0 1rem;
+  padding: 0;
 }
 .list section img {
   display: none;
-  
 }
 div.cards.list {
-  border: hidden;
-  outline: hidden;
+  display: block;
 }
-.list section h3 {
-  font-size: 1rem;
-  font-family:'Times New Roman', Times, serif;
-}
-div.cards section {
+/* below code had to be moved to the med view */
+/* #directory div.cards.list section {
+  flex-direction: row;
+} */
+#directory div.cards.gallery section h3 {
+  
+  font-weight: bold;
+ }  
+/* #directory div.cards.list p:nth-child(odd) {
+ color: purple;
+} */
+
+/* #directory div.cards section {
   border-left: none;
   outline: none;
-}
-#directory div.cards.list section:nth-child(even) {
-  background-color: #c4eef250;
-  
+} */
+#directory div.cards.list section:nth-of-type(even) {
+  background-color: #c4eef290;
+  border: solid 1px #02515950;;
 }

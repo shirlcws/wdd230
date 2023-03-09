@@ -227,4 +227,17 @@ button#list {
   max-height: 65px;
   
 }
+
+/* #directory section {
+  flex-direction: column;
+} */
+#directory.list {
+ display: grid;
+}
+#directory div.list section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+} 
 }
