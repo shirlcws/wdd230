@@ -101,7 +101,17 @@
         ></iframe>
       </div>
       <div class="weather">
-        <h3 class="weather-info">Weather</h3>
+        <h3>Weather</h3>
+<p>
+  The current temperature in Blackfoot is
+  <span id="current-temp"></span> &deg;F
+</p>
+<h4>Current Condition</h4>
+<figure>
+  <img src="" alt="image depicting weather status" id="weather-icon" width="75"/>
+  <figcaption id="figcaption"></figcaption>
+</figure>
+        <!-- <h3 class="weather-info">Weather</h3>
         Temperature: <input type="text" id="temp1" style="width: 50px" /> Wind
         Speed: <input type="text" id="wspeed1" style="width: 50px" />
         <button type="button" onclick="doInputOutput()">Wind Chill</button>
@@ -111,7 +121,7 @@
           src="images/weather_icon.png"
           width="200"
           alt="sun rain and clouds"
-        />
+        /> -->
       </div>
       <div class="news">
         <h3>More Power Outages</h3>
@@ -176,7 +186,7 @@
     </footer>
 
     
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
     <script src="scripts/banner.js"></script>
   </body>
 </html>

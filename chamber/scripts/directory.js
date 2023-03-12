@@ -2,7 +2,7 @@ const path = "data.json";
 async function fetchAndRenderDirectory() {
   const grab = await fetch(path);
   const info = await grab.json();
-  //take line below out and add console line back in to check it in console
+  //take line below out and add console.table line back in to check it in console
   grabDirectory(info.directory);
   //Use the console.table line to check connection to page
   //   console.table(info.directory);

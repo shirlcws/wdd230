@@ -603,3 +603,8 @@ div.cards.list {
   background-color: #c4eef290;
   border: solid 1px #02515950;;
 }
+textarea#messageArea {
+  padding: 15px;
+  border-left: #c4eef2 solid 6px;
+
+}
