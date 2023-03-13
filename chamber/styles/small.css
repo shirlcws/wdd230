@@ -217,12 +217,15 @@ div.hero {
   grid-column: 1 / 1;
   grid-row: 1 / 2;
   width: 99%;
+  text-align: center;
 }
 
 .hero h2 {
+  font-weight: 800;
   margin: 0 0 0.5rem;
   border-bottom: 1px solid #000;
-  color: white;
+  color: #a67458;
+  text-shadow: 2px 2px #025159; 
 }
 div.hero p {
   margin: 0;
@@ -618,7 +621,7 @@ div.weather {
 }
 img#weather-icon{
   background-color: white;
-  
+
 }
 div.spotlight-1 {
   outline: 5px double #a67458;
