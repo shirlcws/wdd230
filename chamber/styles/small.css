@@ -286,7 +286,7 @@ div.spotlight-2 {
 
 div.join-us {
   grid-column: 1 / 1;
-  background-color: #02515950;
+  background-color: #c4eef250;
   width: 99%;
   padding: 0 0.5rem;
   /* grid-row: 6 / 7; */
@@ -376,6 +376,7 @@ main#join {
 #join h2 {
   background-color: #025159;
   color: white;
+  text-align: center;
 }
 
 label.sbs {
@@ -606,5 +607,60 @@ div.cards.list {
 textarea#messageArea {
   padding: 15px;
   border-left: #c4eef2 solid 6px;
+  border: solid 1px #a67458;
+  border-radius: 5px;
 
 }
+div.weather {
+  outline: 5px double #a67458;
+  border-radius: 3%;
+  
+}
+img#weather-icon{
+  background-color: white;
+  
+}
+div.spotlight-1 {
+  outline: 5px double #a67458;
+  border-radius: 3%;
+  border-style: double;
+  
+}
+div.spotlight-2 {
+  outline: 5px double #a67458;
+  border-radius: 3%;
+  border-style: double;
+  
+}
+div.spotlight-3 {
+  outline: 5px double #a67458;
+  border-radius: 3%;
+  border-style: double;
+  
+}
+div.join-us {
+  outline: 5px double #a67458;
+  border-radius: 3%;
+  border-style: double;
+  background-color: #c4eef290;
+}
+iframe.map {
+  display: flex;
+  outline: 5px double #a67458;
+  border-radius: 3%;
+  border-style: double;
+  padding-top: 2rem;
+  
+  position: relative;
+  
+}
+div.event {
+  display: flex;
+}
+h3.event-title {
+
+position: absolute; 
+/* right: .5 rem; */
+padding: .5rem;
+}
+

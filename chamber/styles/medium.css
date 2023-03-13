@@ -187,7 +187,7 @@ th {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     margin: 0;
-    text-align: center;
+    
   }
   table {
     margin: 1rem;
