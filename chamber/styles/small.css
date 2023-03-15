@@ -74,7 +74,6 @@ header h1 {
   grid-row: 1 / 2;
   text-align: left;
   font-size: medium;
-  
 }
 header p {
   grid-column: 2 / 3;
@@ -88,8 +87,6 @@ div.date {
   text-align: center;
   justify-content: center;
   border: 1px solid #a67458;
- 
-  
 }
 .hover img {
   width: 100%;
@@ -126,7 +123,7 @@ nav ul {
 
 span {
   padding-left: 2vw;
-  color: black;
+
 }
 span#demo {
   color: white;
@@ -214,14 +211,11 @@ main {
   color: #025159;
   /* border-left: 0.5rem solid #025159;
   border-right: 0.5rem solid #025159; */
-  
 }
 main#home {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
-
   grid-column: 1/1;
-  
 }
 /* main#join {
   display: grid;
@@ -234,7 +228,6 @@ div.hero {
   grid-row: 1 / 2;
   width: 99%;
   text-align: center;
- 
 }
 
 .hero h2 {
@@ -242,7 +235,7 @@ div.hero {
   margin: 0 0 0.5rem;
   border-bottom: 1px solid #000;
   color: #a67458;
-  text-shadow: 2px 2px #025159; 
+  text-shadow: 2px 2px #025159;
 }
 div.hero p {
   margin: 0;
@@ -270,9 +263,9 @@ img.power-out {
 div.spotlight {
   grid-column: 1 / 1;
   width: 99%;
-  gap: .5rem;
+  gap: 0.5rem;
 }
- 
+
 div.spotlight-1 {
   grid-row: 1 / 2;
   border-bottom: gray 1px solid;
@@ -305,7 +298,6 @@ div.spotlight-2 {
   height: 0px;
   text-align: center;
   /* display: flex; */
-  
 }
 
 div.join-us {
@@ -540,7 +532,6 @@ button#gallery {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 button#list {
@@ -551,11 +542,10 @@ button#list {
   align-items: center;
 }
 #directory section {
-
 }
 #directory div.gallery section {
   /* max-width: 360px; */
- /* max-height: 650px;   */
+  /* max-height: 650px;   */
   margin: 0.25rem;
   padding: 0.35rem;
   background-color: white;
@@ -613,9 +603,8 @@ div.cards.list {
   flex-direction: row;
 } */
 #directory div.cards.gallery section h3 {
-  
   font-weight: bold;
- }  
+}
 /* #directory div.cards.list p:nth-child(odd) {
  color: purple;
 } */
@@ -626,20 +615,18 @@ div.cards.list {
 } */
 #directory div.cards.list section:nth-of-type(even) {
   background-color: #c4eef290;
-  border: solid 1px #02515950;;
+  border: solid 1px #02515950;
 }
 textarea#messageArea {
   padding: 15px;
   border-left: #c4eef2 solid 6px;
   border: solid 1px #a67458;
   border-radius: 5px;
-
 }
 /*-------------------------------Weather widget------------------------------------*/
 div.weather {
   border: 5px solid #a67458;
   border-radius: 3%;
-  
 }
 
 figure {
@@ -647,7 +634,8 @@ figure {
   border: solid 1px #a67458;
   border-radius: 5%;
   margin-right: 0rem;
-  padding: 0 .5rem;
+  margin-left: 0.5rem;
+  padding: 0 0.5rem;
 }
 /* .weather {
   display: grid;
@@ -678,14 +666,10 @@ div.spotlight-1 {
   border: 1px solid white;
   background-color: #a67458;
   color: white;
-  
 }
 div.spotlight-2 {
   outline: 5px solid #a67458;
   border-radius: 3%;
- 
-  
-  
 }
 div.spotlight-3 {
   outline: 5px double #a67458;
@@ -694,7 +678,7 @@ div.spotlight-3 {
   background-color: #a67458;
 }
 .spotlight-3 img {
-height: 50%;
+  height: 50%;
 }
 div.join-us {
   outline: 5px double #a67458;
@@ -708,17 +692,14 @@ iframe.map {
   border-radius: 3%;
   border-style: double;
   padding-top: 2rem;
-  
+
   position: relative;
-  
 }
 div.event {
   display: flex;
 }
 h3.event-title {
-
-position: absolute; 
-/* right: .5 rem; */
-padding: .5rem;
+  position: absolute;
+  /* right: .5 rem; */
+  padding: 0.5rem;
 }
-
