@@ -48,6 +48,7 @@ apiFetch();
 function displayResults(weatherData) {
   let t = weatherData.main.temp.toFixed(0);
   let s = weatherData.wind.speed.toFixed(0);
+  let w = "N/A";
   humid.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`
   currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
  
@@ -61,7 +62,10 @@ function displayResults(weatherData) {
   captionDesc.textContent = wDesc;
   windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`;
   //windChill.innerHTML = `<strong>${weatherData.wind.chill.toFixed(0)}</strong>`;
-  let w = wC(t, s);
+  if (s > 3 && t <= 50) {
+  w = wC(t, s);
+     }
+    
   windChill.innerHTML = `<strong>${w
    // 35.74 + 0.6215 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16)
   }</strong>`;
