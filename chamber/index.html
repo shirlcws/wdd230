@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,14 +67,14 @@
         <li><a href="discover.html">discover</a></li>
         <li><a href="directory.html">directory</a></li>
         <li><a href="join.html">join</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="contact.html">contact</a></li>
       </ul>
     </nav>
     <main id="home">
       <!-- <div id="grid-container"> -->
       <div class="hero">
         <!-- photo borrowed from cityofblackfoot.org creative commons use -->
-        <h2>City of Blackfoot</h2>
+        <h3>City of Blackfoot</h3>
         <picture class="myPhoto"
           ><source
             srcset="images/blackfoot-bridge-500px.webp"
@@ -102,16 +102,27 @@
         ></iframe>
       </div>
       <div class="weather">
-        <h3>Weather</h3>
-<p>
-  The current temperature in Blackfoot is
-  <span id="current-temp"></span> &deg;F
-</p>
-<h4>Current Condition</h4>
-<figure>
-  <img src="" alt="image depicting weather status" id="weather-icon" width="75"/>
-  <figcaption id="figcaption"></figcaption>
-</figure>
+        <h3>Current Blackfoot Weather</h3>
+        <!-- <h4>Current Conditions</h4> -->
+        <p>Humidity
+          <span id="humid"></span>
+        </p>
+        <p>
+          Temperature
+          <span id="current-temp"></span> &deg;F
+        </p>
+        <p>Wind Speed<span id="wind-speed"></span> mph</p>
+        <p>Wind Chill<span id="wind-chill"></span></p>
+
+        <figure>
+          <img
+            src=""
+            alt="image depicting weather status"
+            id="weather-icon"
+            width="75"
+          />
+          <strong><figcaption id="figcaption"></figcaption></figure></strong></figcaption>
+        </figure>
         <!-- <h3 class="weather-info">Weather</h3>
         Temperature: <input type="text" id="temp1" style="width: 50px" /> Wind
         Speed: <input type="text" id="wspeed1" style="width: 50px" />
@@ -135,20 +146,28 @@
         <h4>$1.00 / bag. Bring your own shovel!</h4>
       </div>
       <div class="spotlight">
+
         <div class="spotlight-1">
-          <h3>Jeff's Jeeps</h3>
-          <img src="images/jeep.png" alt="picture of blackjeep" />
-          <h4>We Fix Jeeps Right!</h4>
+          <h3>Blackfoot Movie Mill</h3>
+          <img src="images/info_blackfoot.gif" alt="Business logo for Blackfoot Movie Mill">
+          <p>369 W Bridge St. Blackfoot</p>
+          <p>https://royaltheaters.com</p>
+          <h4> Discount Movies
+          </h4>
+          <!-- <h3>Jeff's Jeeps</h3> -->
+          <!-- <img src="images/jeep.png" alt="picture of blackjeep" />
+          <h4>We Fix Jeeps Right!</h4> -->
+
         </div>
         <div class="spotlight-2">
-          <h3>Kooky Cookies</h3>
-          <img src="images/cookie.png" alt="picture of sugar cookie" />
-          <h4>Our Cookies Have Character!</h4>
+          <h3>Deru's Meridian Street Automotive Repair</h3>
+          <img src="images/info-autoShopLSWL992931-Derus-Meridian.png" alt="Business logo for Derus auto shop" />
+          <h4>Automotive specialist</h4>
         </div>
         <div class="spotlight-3">
-          <h3>Larry's Lighting</h3>
-          <img src="images/Lightbulb.png" alt="picture of single light bulb" />
-          <h4>Keeping You in the Light!</h4>
+          <h3>Idaho Potato Museum</h3>
+          <img src="images/info-blackfoot-pm-Header_NS.png" alt="image of potato characature" width="300"/>
+          <h4>community Award</h4>
         </div>
       </div>
       <div class="join-us">
@@ -186,7 +205,6 @@
       </p>
     </footer>
 
-    
     <script src="scripts/weatherapi.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/apps.js"></script>
