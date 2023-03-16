@@ -50,7 +50,6 @@
   div.event {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    height: 50%;
     border: none;
   }
   #home div.hero {

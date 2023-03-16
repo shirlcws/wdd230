@@ -28,19 +28,19 @@ async function apiFetch() {
   const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=Blackfoot&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;
   // The below testing script is how this differs from the prophet exercise
 
-  try {
+  // try {
     const response = await fetch(apiURL);
     if (response.ok) {
       const data = await response.json();
 
-      console.log(data); // this is for testing the call
+      // console.log(data); // this is for testing the call
       displayResults(data);
     } else {
       throw Error(await response.text());
     }
-  } catch (error) {
-    console.log(error);
-  }
+  // } catch (error) {
+  //   console.log(error);
+  // }
 }
 // The above testing script is how this differs from the prophet exercise
 apiFetch();
@@ -68,7 +68,7 @@ function displayResults(weatherData) {
 
   windChill.innerHTML = `<strong>${
     w
-    // 35.74 + 0.6215 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16)
+    // 35.74 + 0.6215 * tempF - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
   }</strong>`;
 }
 
