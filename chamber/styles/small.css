@@ -231,6 +231,7 @@ a#join-here {
   padding: 0.5rem 2.5rem;
   border-radius: 5%;
   border: none;
+  font-weight: bolder;
   text-decoration: none;
   
 }
@@ -279,6 +280,7 @@ div.spotlight {
   grid-column: 1 / 1;
   width: 99%;
   gap: 0.5rem;
+  
 }
 
 div.spotlight-1 {
