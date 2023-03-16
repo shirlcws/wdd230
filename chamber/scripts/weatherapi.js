@@ -21,7 +21,7 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const windSpeed = document.querySelector("#wind-speed");
 const windChill = document.querySelector("#wind-chill");
-const captionDesc = document.querySelector("#figcaption");
+const captionDesc = document.querySelector("#figcap");
 
 // The apiurl fetches response from openweathermap.org through a query of your choice
 async function apiFetch() {
@@ -49,13 +49,13 @@ function displayResults(weatherData) {
   let t = weatherData.main.temp.toFixed(0);
   let s = weatherData.wind.speed.toFixed(0);
   let w = "N/A";
-  humid.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
- 
+  humid.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`;
+  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
+    0
+  )}</strong>`;
 
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const wDesc = weatherData.weather[0].description;
- 
 
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", wDesc);
@@ -63,11 +63,12 @@ function displayResults(weatherData) {
   windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`;
   //windChill.innerHTML = `<strong>${weatherData.wind.chill.toFixed(0)}</strong>`;
   if (s > 3 && t <= 50) {
-  w = wC(t, s);
-     }
-    
-  windChill.innerHTML = `<strong>${w
-   // 35.74 + 0.6215 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16)
+    w = wC(t, s);
+  }
+
+  windChill.innerHTML = `<strong>${
+    w
+    // 35.74 + 0.6215 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16)
   }</strong>`;
 }
 
@@ -80,7 +81,7 @@ function wC(tempF, speed) {
   );
   return f;
 }
- //change first letter of each word to capital letter
+//change first letter of each word to capital letter
 //  wDesc = wDesc.split(' ').map(capitalize).join(' ');
 //  document.querySelector('figcaption').textContent = `${wDesc}`;
 

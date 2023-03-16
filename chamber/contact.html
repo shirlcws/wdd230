@@ -63,28 +63,29 @@
           <li><a class="active" href="contact.html">contact</a></li>
         </ul>
       </nav>
-      <div class="chamber-map-loco" width="400"> <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.728294151402!2d-112.34658552457796!3d43.18792638072688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53551a9d853e383d%3A0xfbbc1e0e235a6460!2sGreater%20Blackfoot%20Area%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1676755444225!5m2!1sen!2sus"
-        width="300"
-        height="225"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe></div>
-      <form action="">
-      <label for="messageArea">Briefly describe your business:</label>
-    </div>
+      <div class="event">
+        <h3 class="event-title">Event</h3>
 
-    <textarea
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.728294151402!2d-112.34658552457796!3d43.18792638072688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53551a9d853e383d%3A0xfbbc1e0e235a6460!2sGreater%20Blackfoot%20Area%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1676755444225!5m2!1sen!2sus"
+          width="300"
+          height="225"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <form id="form" method="get" action="thankyou.html">
+      <label for="messageArea">Briefly describe your business:</label>
+       <textarea
       id="messageArea"
       name="messageArea"
       rows="8"
       cols="30"
     ></textarea>
-  </fieldset>
-</form>
+  </form>
   <input type="hidden" id="timeStamp" name="timeStamp" />
   <input type="submit" value="Commit Member Choices" class="submit" />
       <footer>
