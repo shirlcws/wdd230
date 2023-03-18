@@ -196,7 +196,8 @@ body {
 .weather,
 .news,
 .join-us,
-.spotlight {
+.spotlight,
+.cTact {
   color: black;
   border-bottom: gray 1px solid;
   padding: 0.5rem;
@@ -233,7 +234,6 @@ a#join-here {
   border: none;
   font-weight: bolder;
   text-decoration: none;
-  
 }
 div.hero {
   grid-column: 1 / 1;
@@ -257,13 +257,13 @@ div.hero p {
 }
 
 div.weather {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #c4eef290;
+  justify-content: flex-end;
+  align-content: center;
+ display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
   width: 99%;
 }
-
 div.news {
   grid-column: 1 / 1;
   width: 99%;
@@ -280,7 +280,6 @@ div.spotlight {
   grid-column: 1 / 1;
   width: 99%;
   gap: 0.5rem;
-  
 }
 
 div.spotlight-1 {
@@ -376,6 +375,11 @@ footer p:nth-of-type(3) {
   text-align: center;
   border-top: 1px solid white;
 }
+.Tcourtesy a{
+  text-align: center;
+   color: black;
+   text-decoration: none;
+  }
 /* end home page small */
 /* beg of discover page */
 #discover {
@@ -397,6 +401,12 @@ div.event {
   grid-column: 1 / 1;
   align-content: center;
   width: 99%;
+}
+.Cevents {
+  border: 1px solid #a67458;
+  outline: 5px double white;
+  border-radius: 3%;
+  padding: 0.5rem;
 }
 #discover div {
   text-align: center;
@@ -650,41 +660,24 @@ textarea#messageArea {
   border-radius: 5px;
 }
 /*-------------------------------Weather widget------------------------------------*/
-div.weather {
-  border: 5px solid #a67458;
-  border-radius: 3%;
-}
+
 
 figure {
-  background-color: white;
+  background-color: #c4eef290;
   border: solid 1px #a67458;
   border-radius: 5%;
   margin-right: 0rem;
   margin-left: 0.5rem;
   padding: 0 0.5rem;
 }
-/* .weather {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: .5rem;
-} */
-/* h3 {
-  grid-column: 1 / 4;
-  text-align: center;
-}
-h4 {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-  text-align: center;
-} */
-/* p {
-  grid-column: 3 / 4;
-} */
-figure {
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
-}
+
+.weather {
+ 
+  grid-gap: .5rem;
+  border: 5px solid #a67458;
+  border-radius: 3%;
+} 
+
 /*-------------------------------Weather widget------------------------------------*/
 div.spotlight-1 {
   outline: 5px double white;
@@ -725,10 +718,36 @@ iframe.map {
   position: relative;
 }
 div.event {
-  align-items: end;
-  justify-content: end;
+  
   padding: 0.5rem;
   outline: 5px double white;
   border-radius: 5%;
   border: 1px solid white;
+}
+div.Cevents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.cTact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 80%;
+  margin: 1rem;
+  outline: 5px double white;
+  border-radius: 5%;
+  border: 1px solid white;
+}
+form#form {
+  /* background-color: red; */
+}
+.weather section {
+  border: 1px solid #bbb;
+  /* background-color: #c4eef290; */
+  border-radius: 5%;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  outline: 5px double white;
+  box-shadow: inset 0 -3em 3em rgb(0 0 0 / 10%), 0 0 0 2px rgb(255 255 255),
+    0.3em 0.3em 1em rgb(0 0 0 / 30%);
 }

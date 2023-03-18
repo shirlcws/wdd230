@@ -91,11 +91,12 @@
       <div class="event">
         
         <h3 class="event-title">Upcoming Events:</h3>
+        <div class="Cevents">
         <h4>Footloose</h4><p>Performed by Snake River High students</p>
         <p>Cost: $8 </p>
         <p>Dates: March 17, 18, 20, 21, 24, 25</p>
         <p>Time: Showtime 7pm (opens at 6:30pm)</p>
-
+</div>
         <!-- <iframe
           class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.728294151402!2d-112.34658552457796!3d43.18792638072688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53551a9d853e383d%3A0xfbbc1e0e235a6460!2sGreater%20Blackfoot%20Area%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1676755444225!5m2!1sen!2sus"
@@ -108,7 +109,10 @@
         ></iframe> -->
       </div>
       <div class="weather">
-        <h3>Current Blackfoot Weather</h3>
+       
+        <h3>Climate Conditions</h3>
+        <p class="Tcourtesy">Courtesy of<a href "https://openweathermap.org/"> Open Weather</a></p>
+        <section>
         <!-- <h4>Current Conditions</h4> -->
         <p>Humidity <span id="humid"></span> ﹪</p>
         <p>
@@ -117,14 +121,16 @@
         </p>
         <p>Wind Speed<span id="wind-speed"></span> mph</p>
         <p>Wind Chill<span id="wind-chill"></span></p>
-
+       
         <figure>
           <img
-            src="https://openweathermap.org/img/w/04d.png"
-            alt="climate icon"
+            src=""
+            alt=""
             id="weather-icon"
             width="75"
-          />
+              
+          ><figcaption></figcaption></figure>
+          </section>
           <figcaption id="figcap">There are plenty of things to love here!</figcaption>
         </figure>
         <!-- <h3 class="weather-info">Weather</h3>
@@ -201,8 +207,10 @@
       />
       <p>
         Blackfoot Chamber of Commerce <br />
-        1234 Burdock Street Units abc Blackfoot, Idaho USA 83221
+        1234 Burdock Street Units abc Blackfoot, Idaho USA 83221<br>
+        
       </p>
+      
       <p>
         &copy; 2023 | Blackfoot Chamber | Shirley Christensen | wdd 230 project
         | Last Modified:
@@ -214,6 +222,8 @@
           ><br />📍</a
         >Location Map
       </p>
+      
+      
     </footer>
 
     <script src="scripts/weatherapi.js"></script>
