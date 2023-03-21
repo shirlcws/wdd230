@@ -1,15 +1,15 @@
-const path = "data.json";
 async function fetchAndRenderDirectory() {
-  const grab = await fetch(path);
-  const info = await grab.json();
+  const dataResponse = await fetch("data.json");
+  const businessData = await dataResponse.json();
+
   //take line below out and add console.table line back in to check it in console
-  grabDirectory(info.directory);
+  renderDirectory(businessData.directory);
   //Use the console.table line to check connection to page
   //   console.table(info.directory);
 }
 fetchAndRenderDirectory();
 
-const grabDirectory = (directory) => {
+const renderDirectory = (directory) => {
   const cards = document.querySelector("div.cards"); //selects output container element
 
   directory.forEach((directory) => {

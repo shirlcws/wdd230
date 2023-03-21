@@ -29,15 +29,15 @@ async function apiFetch() {
   // The below testing script is how this differs from the prophet exercise
 
   // try {
-    const response = await fetch(apiURL);
-    if (response.ok) {
-      const data = await response.json();
+  const response = await fetch(apiURL);
+  if (response.ok) {
+    const data = await response.json();
 
-      // console.log(data); // this is for testing the call
-      displayResults(data);
-    } else {
-      throw Error(await response.text());
-    }
+    // console.log(data); // this is for testing the call
+    displayResults(data);
+  } else {
+    throw Error(await response.text());
+  }
   // } catch (error) {
   //   console.log(error);
   // }
@@ -100,6 +100,6 @@ function wC(tempF, speed) {
 // </p>
 // <h2>Current Condition</h2>
 // <figure>
-//   <img src="" alt="image depicting weather status" id="weather-icon" />
+//   <img src="https://openweathermap.org/img/w/03d.png" alt="image depicting weather status" id="weather-icon" />
 //   <figcaption id="figcaption"></figcaption>
 // </figure> */}
