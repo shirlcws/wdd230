@@ -2,25 +2,22 @@ async function fetchAndRenderDirectory() {
   const dataResponse = await fetch("data.json");
   const businessData = await dataResponse.json();
 
-//   //take line below out and add console.table line back in to check it in console
-//  renderDirectory(businessData.directory);
-//   //Use the console.table line to check connection to page
-//    console.table(businessData.directory);
 
+//disable renderDirectory and Use the console.table(businessData.directory); code to check connection to page
+//    console.table(businessData.directory);
+//sort silver and gold levels from directory
   const silver = businessData.directory.filter((item) => {
     return item.level == "silver" || item.level == "gold";
    
   });
-function random_item(items) {
-    return items[Math.floor(Math.random()*items.length[3])];
-}
-  console.log(silver);
+//render the silver and gold levels 
+ // console.log(silver);
   renderDirectory(silver);
-console.log(random_item(items));
+
 }
-
+//call awaiting function
 fetchAndRenderDirectory();
-
+//after above function runs again - directory is rendered
 const renderDirectory = (directory) => {
   const cards = document.querySelector("div.cards"); //selects output container element
 
