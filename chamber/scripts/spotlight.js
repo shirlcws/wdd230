@@ -5,14 +5,15 @@ async function fetchAndRenderDirectory() {
   const directory = businessData.directory.filter((item) => {
     return item.level == "gold";
   });
-  const silver = businessData.directory.filter((item) => {
-    return item.level == "silver";
-  });
+//   const silver = businessData.directory.filter((item) => {
+//     return item.level == "silver";
+//   });
 //   console.log(gold[0]);
 
   const silver = businessData.directory.filter((item) => {
     return item.level == "silver" || item.level =="gold";
-  });
+  }
+  );
 
 //   console.log(silver[0])
 

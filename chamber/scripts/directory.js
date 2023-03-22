@@ -19,13 +19,14 @@ const renderDirectory = (directory) => {
     let h3 = document.createElement("h3");
     let address = document.createElement("p");
     let phone = document.createElement("p");
-    let website = document.createElement("p");
+    let website = document.createElement("a");
     let logos = document.createElement("img");
 
     h3.textContent = `${directory.business}`;
     address.textContent = `${directory.address}`;
     phone.textContent = `${directory.phone}`;
     website.textContent = `${directory.website}`;
+    website.href = `${directory.website}`;
 
     //Build the image logo by setting all the relevant attribute
     logos.setAttribute("src", directory.imageurl);

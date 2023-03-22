@@ -603,6 +603,22 @@ button#list {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
+#home section {
+  /* max-width: 360px; */
+  /* max-height: 650px;   */
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: white;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 0.5px solid white;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
 section > p {
   min-height: 35px;
   margin-left: 0.25rem;
@@ -615,11 +631,22 @@ section > p {
 div.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  box-shadow: inset 0 -3em 3em rgb(0 0 0 / 10%), 0 0 0 2px rgb(255 255 255),
+  0.3em 0.3em 1em rgb(0 0 0 / 30%);
+}
+#home div.cards section:nth-of-type(1) {
+  display: none;
+}
+#home div.cards section:nth-of-type(2) {
+  display: none;
 }
 #directory h2 {
   text-align: center;
   color: white;
   background-color: #025159;
+}
+main a {
+  color:#025159;
 }
 .list {
   display: flex;
@@ -680,8 +707,9 @@ figure {
 
 .weather {
   grid-gap: 0.5rem;
-  border: 5px solid #a67458;
+  outline: 5px double white;
   border-radius: 3%;
+  border: 1px solid white;
 }
 
 /*-------------------------------Weather widget------------------------------------*/

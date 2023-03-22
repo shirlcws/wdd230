@@ -6,7 +6,7 @@
     "imageurl": "images/info_blackfoot.gif",
     "address": "369 W Bridge St. Blackfoot",
     "phone": "null",
-    "website": "http://royaltheaters.com/",
+    "website": "https://royaltheaters.com/",
     "level": "gold"
     
 },
@@ -34,7 +34,7 @@
     "address": "130 Northwest Main St. Blackfoot",
     "phone": "208-785-2517",
     "website": "https://idahopotatomuseum.com/",
-    "level": "bronze"
+    "level": "gold"
     
 },
 {
@@ -42,7 +42,7 @@
     "imageurl": "images/info-autoShopLSWL992931-Derus-Meridian.png",
     "address": "31392 S Meridian St. Blackfoot",
     "phone": "208-427-3254",
-    "website": "https://derusmeridianstauto.com/",
+    "website": "https://derusmeridianstauto.com",
     "level": "gold"
     
 },
@@ -61,7 +61,7 @@
     "address": "1171 Parkway Dr. Blackfoot",
     "phone": "208-785-1441",
     "website": "https://busybeesflowers.com/",
-    "level": "silver"
+    "level": "bronze"
     
 },
 {
@@ -69,7 +69,7 @@
     "imageurl": "images/linf0-blackfoot-fh-ogo_standard_t1.png",
     "address": "132 South Shilling Ave. Blackfoot",
     "phone": "208-785-1320",
-    "website": "rupesburgers@gmail.com",
+    "website": "https://rupesburgers@gmail.com",
     "level":     "bronze"
     
 },
@@ -78,8 +78,8 @@
     "imageurl": "images/info-blackfoot-pratt+4-315w.webp",
     "address": "1687 Lawrence Ln. Blackfoot",
     "phone": "208-785-1324",
-    "website": "http://www.prattlumber.com",
-    "level": "bron"
+    "website": "https://www.prattlumber.com",
+    "level": "bronze"
    
 }
 ]
