@@ -28,9 +28,26 @@
     grid-column: 2;
     grid-row: 2 / 3;
   }
-  nav ul li a {
-    padding: 0.5rem 1rem;
+  /* this gets rid of the hamburger menu and changes
+the navigation from column to a row. */
+
+  nav ul#primaryNav {
+    display: flex;
+    /* justify-content: flex-start; (default is same as)*/
+    margin-left: 2vw;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
   }
+  nav ul li a {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  /* nav ul.open {
+    display: none;
+  } */
+button#hamburgerBtn {
+  display: none;
+}
   footer {
     justify-content: space-between;
   }
@@ -81,6 +98,7 @@
 
     padding: 0 0;
   }
+
   /* div.spotlight {
     grid-column: 4 / 5;
     grid-row: 1 / 4; 
@@ -97,7 +115,7 @@
     grid-column: 4 / 5;
     grid-row: 1 / 4;
 
-    padding: 0.5rem;
+    padding: 2rem;
   }
   div.spotlight {
     display: flex;

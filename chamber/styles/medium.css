@@ -48,25 +48,7 @@
   header .serve {
     display: block;
   }
-  /* this gets rid of the hamburger menu and changes
-the navigation from column to a row. */
-  nav button {
-    display: none;
-  }
-  nav ul#primaryNav {
-    display: flex;
-    /* justify-content: flex-start; (default is same as)*/
-    margin-left: 2vw;
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-  }
-  nav ul li a {
-    border: none;
-    padding: 0.5rem 1rem;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-  }
-  nav ul.open {
-    display: none;
-  }
+
 
   #home div.hero {
     grid-column: 1 / 4;

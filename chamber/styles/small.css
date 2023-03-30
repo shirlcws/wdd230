@@ -21,6 +21,8 @@ h3 {
 }
 h3.spotlight {
   font-weight: bolder;
+  top: 79rem;
+  
 }
 p,
 h4,
@@ -88,7 +90,8 @@ div.date {
   padding-top: 0.25rem;
   text-align: center;
   justify-content: center;
-  border: 1px solid #a67458;
+  border: 1px solid #c4eef2;
+  padding: .1rem;
 }
 .hover img {
   width: 100%;
@@ -218,15 +221,20 @@ main {
 }
 main#home {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
+padding: 1rem;
   grid-column: 1/1;
   row-gap: 0.5rem;
+  position: relative;
 }
 /* main#join {
   display: grid;
   margin: 0 auto;
   padding: .5rem;
 }  */
+
+p#hero-btn {
+  text-align: center;
+}
 a#join-here2,
 a#join-here {
   background-color: #a67458;
@@ -237,9 +245,22 @@ a#join-here {
   border: none;
   font-weight: bolder;
   text-decoration: none;
+  
 }
-#stats {
+
+.stats {
   color: black;
+  text-align: left;
+  margin: .5rem
+   
+}
+.hero p {
+  text-align: left;
+  padding: .5rem;
+}
+h5#stats {
+  border: 2px solid #a67458;
+  padding:.1rem .5rem;
   text-align: left;
 }
 div.hero {
@@ -253,14 +274,14 @@ div.hero {
 
 .hero h2 {
   font-weight: 800;
-  margin: 0 0 0.5rem;
+  margin:.5rem;
   border-bottom: 1px solid #000;
   color: #a67458;
   text-shadow: 2px 2px #025159;
 }
 div.hero p {
   margin: 0;
-  color: white;
+  
 }
 .hero h4 {
   padding: 0.5rem;
@@ -289,6 +310,15 @@ div.spotlight {
   grid-column: 1 / 1;
   width: 99%;
   gap: 0.5rem;
+}
+h3.spotlight {
+  position: absolute;
+  right: 4.2rem;
+      top: 0.1rem;
+    left: 3rem;
+    right: 4.2rem;
+    text-align: center;
+    padding: 0.1rem;
 }
 
 div.spotlight-1 {
@@ -389,7 +419,7 @@ footer p:nth-of-type(3) {
   color: black;
 }
 /* end home page small */
-/* beg of discover page */
+/* beg of discover page *******************************/
 #discover {
   display: block;
 }
@@ -410,6 +440,7 @@ div.event {
   align-content: center;
   width: 99%;
 }
+
 .Cevents {
   border: 1px solid #a67458;
   outline: 5px double white;
@@ -633,6 +664,8 @@ div.cards {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   box-shadow: inset 0 -3em 3em rgb(0 0 0 / 10%), 0 0 0 2px rgb(255 255 255),
   0.3em 0.3em 1em rgb(0 0 0 / 30%);
+  position: relative;
+  padding-top: 2rem;
 }
 #home div.cards section:nth-of-type(1) {
   display: none;

@@ -33,7 +33,7 @@ const year = d.getFullYear();
 // let seconds = d.getSeconds();
 let day = d.getDate();
 if (day < 10) {
-	day = `0${day}`
+	day = `${day}`
 }
 const fulldate = `${dayName}, ${day}  ${monthName} ${year}`;
 
