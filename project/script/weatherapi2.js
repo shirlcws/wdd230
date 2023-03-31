@@ -2,14 +2,12 @@
 const humid = document.querySelector("#humid");
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
-//const windSpeed = document.querySelector("#wind-speed");
-//const windChill = document.querySelector("#wind-chill");
 const captionDesc = document.querySelector("#figcap");
 
 // The apiurl fetches response from openweathermap.org through a query of your choice
 async function apiFetch() {
  const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=32.4207&lon=-104.2288&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;
-//const apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=32.4207&lon=-104.2288&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;
+
   // The below testing script is how this differs from the prophet exercise
 
   // try {
@@ -30,10 +28,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
-  let t = weatherData.main.temp.toFixed(0);
-  let s = weatherData.wind.speed.toFixed(0);
-  let w = "N/A";
-  humid.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`;
+   humid.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`;
   currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
     0
   )}</strong>`;
@@ -44,24 +39,7 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", wDesc);
   captionDesc.textContent = wDesc;
-  windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`;
-  //windChill.innerHTML = `<strong>${weatherData.wind.chill.toFixed(0)}</strong>`;
-  if (s > 3 && t <= 50) {
-    w = wC(t, s);
+  
   }
 
-  windChill.innerHTML = `<strong>${
-    w
-    // 35.74 + 0.6215 * tempF - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
-  }</strong>`;
-}
 
-function wC(tempF, speed) {
-  let f = Math.round(
-    35.74 +
-      0.6215 * tempF -
-      35.75 * Math.pow(speed, 0.16) +
-      0.4275 * tempF * Math.pow(speed, 0.16)
-  );
-  return f;
-}

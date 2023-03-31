@@ -7,7 +7,7 @@ const captionDesc = document.querySelector("#figcap");
 //fetch apiurl response from openweathermap.org
 
 async function apiFetch() {
-    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=Blackfoot&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;
+    const apiURL = `//const apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=32.4207&lon=-104.2288&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;;
 
 //test in console
 
