@@ -17,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 /*************** main ***********/
-picture.home-p img{
+.home-p img{
     width: 100%;
        border-radius: 5%;
     
@@ -26,6 +26,10 @@ picture.home-p img{
 /* img#open-w {
     width: 7rem;
 } */
+#wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 0 auto;
+}
 /*************** Fresh Window ***********/
 p#fresh-btn {
     text-align: center;
@@ -64,50 +68,52 @@ figcaption#figcap {
   margin-left: .5rem;
 }
 div p{
-    min-width: 18rem;
-    
+        
     height: 100px;
     overflow: scroll;
 }
 
 
 header {
-    /* position: absolute; */
-    /* height: 7rem; */
+   
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
       background-color: white;
     color: black;
+    padding: .5rem;
      }
      h1.h-line {
-        grid-column: 1 / 5;
-        grid-row: 2 / 3;
+        grid-column: 1 / 4;
+        
         font-weight: 600;
         padding: .25rem;
         margin: 0;
         color: #ff6666;
      }
   img.logo {
-     grid-column: 4 / 5;
+    margin-left: 4rem;
+     grid-column: 3 / 4;
+     width: 7rem;
   }
   p.address {
-    grid-column: 3 / 5;
+    grid-column: 3 / 4;
     grid-row: 3 / 4;
-    padding-left: .75rem;
+    padding-left: 1rem;
+   
     /* padding: 0rem 1rem 1rem 1rem;
     margin-bottom: 1rem; */
   }
   .phone {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     grid-row: 3 / 4;
     padding-left: .4rem;
    
   }
-.item:nth-of-type(1) {
+#fresh-order {
   /* grid-column: 1 / 2; */
   
   color: black;
-  background-color: transparent;
+  background-color: #ff6666;
 }
 
 .item:nth-of-type(2) {
@@ -133,7 +139,7 @@ header {
 h1 {
   margin-left: 2rem;
 }
-
+/* 
 .open .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
@@ -147,7 +153,7 @@ h1 {
 }
 
 /* hamburger menu decoration */
-.bar1,
+/* .bar1,
 .bar2,
 .bar3 {
   width: 40px;
@@ -181,7 +187,7 @@ li a{
        li a:hover {
         
 background-color: #ffcc99;
-       }
+       } 
 div.nav {
     /* display: grid; */
     /* gap: 40px 20px; */
@@ -197,7 +203,7 @@ div.nav {
   z-index: 100;
  
    
-}
+}  */
 
 /* label.nav-toggle {
   display: block; 
@@ -222,25 +228,29 @@ div.nav {
     font-size: 95%;
   } */
   
- */
- /* ******************** main ******************/
- div.item {
-    /* grid-column:  */
-    display: flex;
-    flex-wrap: nowrap;
-flex-direction: row-reverse;
-align-items: baseline;
-align-items: stretch;
-justify-content: space-between;
- }
  
- #
+ /* ******************** main ******************/
+main { 
+  display: grid;
+  margin: 0 auto;
+
+}
+ main#home {
+grid-template-columns: repeat(auto-fit, minmax(
+  320px, 1fr)
+);
+padding: .75rem;
+row-gap: .75rem;
+/* position: relative; */
+ }
+
+  
 /* ******************** footer ******************/
-footer {
+/* footer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-}
+} */
 
 div.social {
     grid-column: 2 / 3;

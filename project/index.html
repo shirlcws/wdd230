@@ -28,24 +28,26 @@
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    
-      <header> <h1 class="h-line">Bountiful Fresh</h1>
+    <div id="wrapper">
+       <header> 
+        <img class="logo" src="images/fresh-logosvg.webp" alt="Bountiful logo of fruit bowl">
+        <h1 class="h-line">Bountiful Fresh</h1>
         <p class="phone">801-135-4281</p>
-          <p class="address">123 Sunnyview Ln.<br>Carlsbad, CA  92008</p>
-           <img class="logo" src="images/fresh-logosvg.svg" alt="Bountiful logo of fruit bowl">
+          <p class="address">123 Sunnyview Ln.<br>Carlsbad, CA  92008</p> 
+        </header> 
            <!-- <input type="checkbox" id="nav" name="nav" class="nav-checkbox"> -->
     
-          <link rel="stylesheet" href="style/small.css" />
+          <!-- <link rel="stylesheet" href="style/small.css" />
           <link rel="stylesheet" href="style/medium.css" />
-          <link rel="stylesheet" href="style/large.css" />
+          <link rel="stylesheet" href="style/large.css" /> -->
           <!-- fonts -->
           
-        </div>
-      </header>
-      <div id="container"></div>
+        <!-- </div>
+     
+      <div id="container">
       <main id="home">
 
-        <!-- <input type="checkbox" id="nav" name="nav" class="nav-checkbox">
+        <input type="checkbox" id="nav" name="nav" class="nav-checkbox">
         <div class="nav">
           <label class="nav-toggle" for="nav" onclick="slideNav(this)">
             <div class="bar1"></div>
@@ -67,9 +69,9 @@
         </div> -->
         
       
-      <div class="item" class="fresh-order"><picture class="home-p"><img src="images/jonas-kakaroto-fruit-basket-unsplash-lowq.webp" alt="fruit basket"
+      <div class="item"><picture class="home-p"><img src="images/jonas-kakaroto-fruit-basket-unsplash-lowq.webp" alt="fruit basket"
          data-src="images/jonas-kakaroto-fruit-basket-unsplash.webp" width="640"></picture>
-        <p id="fresh-btn"><a id="fresh-a" href="fresh.html">🍎 Order Fresh 🥬</a></p>
+        <p id="about-btn"><a id="fresh-a" href="about-Us.html">About Us</a></p>
         <!-- <label for="meeting-time">Choose a pick up time:</label> -->
 
 
@@ -88,15 +90,15 @@
         We deliver fresh to you⏤coast to coast from Los Angeles to San Diego.
       </p>
     </div>
-      <div class="item"><picture class="home-p"><img src="images/sohaim-siddiquee-9Y0YxlO7A1Q-unsplash lqcopy.webp" alt="fruit basket"
-        data-src="images/sohaim-siddiquee-9Y0YxlO7A1Q-unsplash copy.webp" width="960"></picture>
-       <p id="fresh-btn"><a id="fresh-a" href="fresh.html">🍎 Order Fresh 🥬</a></p></div>
+      <div class="item"><picture class="home-p"><img src="images/sohaim-siddiquee-unsplash-lqcopy.webp" alt="vw van food stand"
+        data-src="images/sohaim-siddiquee-unsplash.webp" width="640"></picture>
+       <p id="fresh-btn"><a href="fresh.html">🍎 Order Fresh 🥬</a></p></div>
       <div class="sect">
         <h2>Coast To Coast </h2>
         <p>Our main facility is located in the quaint coastal city of Carlsbad, California. Famous for LEGOLAND theme park, we pride ourselves on meeting the needs
           of the locals, while catering to the many tourist who flock to the sandy beaches that border this beautiful city. </p>
       </div>
-      <div class="item" class="weather"> 
+      <div class="item" id="weather"> 
         <p>Humidity <br><span id="humid"></span> ﹪</p>
         <p>
           Temp
@@ -122,7 +124,7 @@
       <div class="item">Item 7</div>
       <div class="item">Item 8</div>
       <div class="item">Item 9</div> -->
-    </main>
+    <!-- </main> -->
     <footer>
      
       <div class="social">
@@ -134,14 +136,16 @@
         </div class="social-i">
           <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a>
       </div>
-    </div>
+    
         <P>&copy; 2023 | Last modified:<span id="demo"></span><a id="references" href="references.html"> &nbsp;references page</a></P>
        
     </footer>
+  </div>
     <script src="script/project.js"></script>
     <!-- <script src="script/orderStamp.js"></script> -->
     <!-- <script src="script/weatherapi.js"></script> -->
     <script src="script/weatherapi2.js"></script>
+    <script src="script/forecast.js"></script>
     <script src="script/lazyload.js"></script>
 
     <!-- <label for="meeting-time">Choose a pick up time:</label>
