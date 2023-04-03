@@ -12,12 +12,14 @@ const imgOptions = {
     };
     //checks for IntersectionObserver support
     if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver((items, observer) => {items.forEach((item) => {
+        const observer = new IntersectionObserver((items, observer) => {
+          items.forEach((item) => {
             if (item.isIntersecting) {
-                loadImages(item.target);
+              loadImages(item.target);
+              observer.unobserve(item.target);
             }
+          });
         });
-    });
     imagesToLoad.forEach((img) => {
         observer.observe(img);
     });
