@@ -16,9 +16,10 @@
     height: 3rem;
     margin: 0 auto;
     background-color: transparent;
-    } */
+    top: 5rem;
+    } 
     button#hamburgerBtn {
-        display: none;
+        visibility: hidden;
     }
     .Btn-o {
         display: none;
@@ -45,13 +46,5 @@
         grid-column: 3 / 4;
         grid-row: 3 / 4;
 
-     
-
-/**************** Footer *****************/
-/* div.social {
-   grid-column: 1 / 3; */
-   
-
-      
-        
+    }      
 }
