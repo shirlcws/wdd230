@@ -1,62 +1,79 @@
 @media only screen and (min-width: 32.5rem) {
-    body { 
-        max-width: 900px;
-    }
-    /* .container {
+  body {
+    max-width: 900px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+  }
+  h1.h-line {
+    margin: 1rem 4rem;
+    grid-column: 2 / 5;
+    grid-row: 1 / 3;
+  }
+  img.logo {
+    grid-column: 5 / 6;
+    margin-left: 2rem;
+  }
+  .phone {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+  p.address {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    padding-left: .5rem;
+  }
+ .container {
         max-width: 60rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
                gap: 5px;
         padding: 1rem;
         background-color: white;
-      }  */
-      div#main {
-        display: grid;
-        margin: .5rem auto;
-
-      }
-      .item {
-        background-color: steelblue;
-        height: 8rem;
-      }
-      header {
-        /* position: absolute; */
-           grid-column: 1 / 3; 
-        
-       
-        background-color: transparent;
-        color: black;
-       
-      }
-      .nav {
-        max-width: 30rem;
-        max-height: 45rem;
-        transform:
-        translate3d(-600px, 0, 0); transition: transform 0.40s;
-      padding: 0;
-      }
-      .item:nth-of-type(1) {
-        grid-column: 1 / 2;
-        
-        color: black;
-        background-color: #ccffcc;
-      }
-      .sect:nth-of-type(1) {
-          grid-column: 1 / 2;
-         
-        }
-      .item:nth-of-type(2) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+      }  
       
-        background-color: #ffcc99;
-      }
-      .sect:nth-of-type(2) {
-        grid-column: 2 / 3;
-       
-      }
-      .item:nth-of-type(3) {
-          grid-column: 1 / 2;
-         
-}
+      
+
+    
+  .item {
+    background-color: steelblue;
+    height: 8rem;
+  }
+ .nav {
+    max-width: 30rem;
+    max-height: 45rem;
+    transform: translate3d(-600px, 0, 0);
+    transition: transform 0.4s;
+    padding: 0;
+  } 
+  footer p {
+    text-align: right;
+    margin-right: 2.25rem;
+  }
+
+  div.social {
+    justify-content: space-evenly;
+  }
+  */
+  main#home {
+    margin: 0.5rem auto;
+    grid-template-columns: repeat(8, [col-start] 1fr [col-end]);
+    padding: 0.75rem;
+    
+   
+  }
+  /* picture.home-a {
+    grid-column: 1 / 5;
+    margin-right: 3rem;
+  }
+  p#about-btn {
+    grid-column: 5 / 9;
+    grid-row: 1 / 2;
+
+    background-color: #ffcc99;
+  } */
+
+
 }

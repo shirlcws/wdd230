@@ -8,9 +8,50 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         margin-top: 2rem;
     } */
-    div.nav {
+    header {
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+    nav {
     height: 3rem;
-    
+    margin: 0 auto;
+    background-color: transparent;
+    } */
+    button#hamburgerBtn {
+        display: none;
     }
-  
+    .Btn-o {
+        display: none;
+      }
+    /* nav ul.open {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+        grid-template-rows: 1fr;
+      } */
+      nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    img.logo {
+        width: 15rem;
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+    }
+    h1.h-line {
+        display: none;
+    }
+    .phone {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+
+     
+
+/**************** Footer *****************/
+/* div.social {
+   grid-column: 1 / 3; */
+   
+
+      
+        
 }
