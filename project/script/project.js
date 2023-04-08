@@ -38,8 +38,4 @@ const fulldate = `${dayName}, ${day}  ${monthName} ${year}`;
 
  //document.querySelector(".date").textContent = fulldate;
 
- function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
-}
-
+   

@@ -60,7 +60,6 @@ a.weather-l {
   font-weight: 600;
 }
 
-
 img#weather-icon {
   border-right: 1px solid #ff6666;
 }
@@ -102,15 +101,13 @@ h1.h-line {
 }
 img.logo {
   grid-column: 4 / 5;
-   width: 6rem;
-   margin-top: 1.25rem;
-
+  width: 6rem;
+  margin-top: 1.25rem;
 }
 p.address {
   grid-column: 3 / 5;
   grid-row: 3 / 4;
   padding-left: 1rem;
-
 }
 .phone {
   grid-column: 1 / 4;
@@ -196,10 +193,15 @@ nav ul {
   display: none;
   padding: 0;
   margin: 0;
+ 
+  
 }
 ul {
   padding: 0.5rem 1.5rem;
   list-style-type: none;
+  gap: 1rem;
+  grid-row: 2 / 3;
+  
 }
 ul.menu1 {
   /* list-style-type: none; */
@@ -211,9 +213,18 @@ li a {
   display: block;
   padding: 0.8rem;
   color: black;
-  font-weight: 600;
+  width: 6rem;
+border-radius: 50%;
+  font-weight: 400;
+  font-size: 1.25rem;
   text-decoration: none;
   list-style-type: none;
+}
+
+li {
+  background-color: #ffffcc;
+  border-radius: 50%;
+  align-content: center;
 }
 #hamburgerBtn span:nth-child(2) {
   display: none;
@@ -230,11 +241,11 @@ nav ul.open {
   grid-template-rows: repeat(10, 1fr);
 }
 a.active {
-  border: 3px solid #ffcc99;
+  border: 3px solid #ff6666;
   /* background-color: rgba(0,0,0,0.2); */
 }
 li a:hover {
-  background-color: #ffcc99;
+  background-color: #ff6666;
 }
 
 /* @media (max-width: 540px) {
@@ -249,10 +260,18 @@ main {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding: 0.75rem;
-  row-gap: 0.75rem;
-  /* position: relative; */
+  gap: 0.75rem;
+position: relative;
 }
-
+div.sidebar {
+  background-color: #ffcc99;
+  display: none;
+  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+}
+div.sidebar2 {
+  background-color: red;
+  z-index: 50;
+}
 /* ******************** footer ******************/
 footer {
   display: grid;
@@ -278,7 +297,7 @@ div.social img {
   padding: 0.25rem;
 }
 a#ref {
-  color:#ff6666;
+  color: #ff6666;
   text-decoration: underline;
   font-weight: 600;
 }
