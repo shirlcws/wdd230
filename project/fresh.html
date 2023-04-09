@@ -36,11 +36,12 @@
     <!-- <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button> -->
     <ul id="primaryNav">
       <li>
-        <a href="index.html">home</a>
+        <a class="active" href="fresh.html">Order fresh</a>
       </li>
       <li>
-        <a class="active" href="fresh.html">fresh</a>
+        <a href="index.html">home</a>
       </li>
+      
       <li>
         <a href="aboutus.html">About Us</a>
       </li>
@@ -64,10 +65,84 @@
   <h1 class="h-line">Bountiful Fresh</h1>
   <p class="phone">801-135-4281</p>
   <p class="address">123 Sunnyview Ln.<br />Carlsbad, CA 92008</p></header>
-   
-    <h1>Order Form</h1>
-    <h2>Place Your Order Here</h2>
-    <p>Make your selections please</p>
+   <main id="fresh">
+    
+    <h2>Place Order Here</h2>
+       
+        <form id="form" method="get" action="thankyou.html">
+          <fieldset class="form-info">
+            <legend>Customer Information *required</legend>
+            <label class="cust-info"
+              >First Name* <input type="text" name="f-name" required
+            /></label>
+            <!-- practice -->
+            <input onClick="this.select();" value="Sample Text" />
+            <!-- equivalent to -->
+            <input
+              onClick="this.setSelectionRange(0, this.value.length);"
+              value="Sample Text" />
+            
+
+             <!-- practice -->
+                        <label class="cust-info"
+              ><br>Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="somebody@gmail.com"
+                required
+            /></label>
+            <label class="cust-info"
+              ><br>Cell Phone*
+              <input
+                type="tel"
+                name="phone"
+                pattern="{0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-456-7890"
+                required
+            /></label>
+             </fieldset>
+          <!-- <fieldset class="cust-info">
+            <legend>fruit Selections</legend>
+            <div>choice one</div>
+            <label class="choice">
+              <input type="radio" name="np-membership" value="NP Membership" /> NP
+              Membership
+            </label>
+            <label class="choice"
+              ><input type="radio" name="np-membership" value="NP Membership" />
+              NP Membership
+            </label>
+            <label class="choice"
+              ><input type="radio" name="np-membership" value="NP Membership" />
+              NP Membership
+            </label>
+            <label class="choice"
+              ><input type="radio" name="np-membership" value="NP Membership" />
+              NP Membership
+            </label>
+          </fieldset> -->
+          <form action=""><p>
+          <br><input type="checkbox" name="family" value="name" checked="checked" />Apple
+          <input type="checkbox" name="family" value="name" checked="checked" />Apricot
+          <input type="checkbox" name="family" value="name" checked="checked" />Avocado</p></form>
+          <fieldset class="app-info">
+            <legend>Special instructions</legend>
+            <div>
+              <label for="messageArea">Any Customer Input:</label>
+            </div>
+  
+            <textarea
+              id="messageArea"
+              name="messageArea"
+              rows="6"
+              cols="32"
+            ></textarea>
+          </fieldset>
+          <input type="hidden" id="timeStamp" name="timeStamp" />
+          <input type="submit" value="Submit Order" class="submit" />
+        </form>
+    </main>
 <footer><div class="social">
   <div class="social-f">
     <a href="https://www.facebook.com/" target="_blank"
@@ -89,7 +164,7 @@
 
 <p>
   &copy; 2023 | Last modified:<span id="demo"></span
-  ><a id="ref" href="references.html"> &nbsp;references</a>
+  >
 </p></footer>
 <script src="script/project.js"></script>
 <script src="script/nav.js"></script>

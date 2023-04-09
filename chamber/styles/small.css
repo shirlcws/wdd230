@@ -110,7 +110,7 @@ header img {
   display: none;
 }
 /* ---------------- NAVIGATION ------------------ */
-  button {
+nav button {
   font-size: 2.5rem;
   background: transparent;
   border: none;
@@ -229,6 +229,9 @@ padding: 1rem;
   grid-column: 1/1;
   row-gap: 0.5rem;
   position: relative;
+}
+#directory {
+  /* grid-column: 1 / 4; */
 }
 /* main#join {
   display: grid;
@@ -596,6 +599,7 @@ div.menu {
 }
 div.menu1 {
   display: flex;
+  align-content: center;
 }
 .menu button {
   /* padding: 1rem 6rem; */

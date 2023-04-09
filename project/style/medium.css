@@ -49,6 +49,9 @@
     transition: transform 0.4s;
     padding: 0;
   }
+  picture.home-b {
+    margin-top: -10rem;
+  }
   footer p {
     text-align: right;
     margin-right: 2.25rem;

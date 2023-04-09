@@ -8,5 +8,5 @@ async function fetchAndRenderMenu() {
 fetchAndRenderMenu();
 
 const displayFruit = (fruit) => {
-    const cards = document.querySelector("div.fruit");
+    const cards = document.querySelector("div.cards");
 }
