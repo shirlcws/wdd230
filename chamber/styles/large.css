@@ -45,9 +45,9 @@ the navigation from column to a row. */
   /* nav ul.open {
     display: none;
   } */
-button#hamburgerBtn {
-  display: none;
-}
+  button#hamburgerBtn {
+    display: none;
+  }
   footer {
     justify-content: space-between;
   }
@@ -73,6 +73,7 @@ button#hamburgerBtn {
     margin-top: 3rem;
     grid-column: 2 / 4;
     grid-row: 1 / 3;
+    margin: 3rem 1rem 0.5rem 0.5rem;
   }
   .myPhoto img {
     /* grid-column: 2 / 4; */
@@ -89,10 +90,9 @@ button#hamburgerBtn {
   }
 
   div.weather {
-  
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-     } 
+  }
   div.join-us {
     grid-column: 1 / 1;
 
@@ -115,7 +115,7 @@ button#hamburgerBtn {
     grid-column: 4 / 5;
     grid-row: 1 / 4;
 
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
   div.spotlight {
     display: flex;
@@ -162,19 +162,17 @@ button#hamburgerBtn {
   fieldset#m-options {
     margin: 1.5rem auto;
   }
-   /*--------------- main#directory ---------------*/
- button#gallery {
-  padding: 1rem 11rem;
-  max-width: 550px;
-}
-button#list {
-  padding: 1rem 12rem;
-  max-width: 550px;
-  max-height: 65px;
-  
-}
-/*--------------- main#contact ---------------*/
-
+  /*--------------- main#directory ---------------*/
+  button#gallery {
+    padding: 1rem 11rem;
+    max-width: 550px;
+  }
+  button#list {
+    padding: 1rem 12rem;
+    max-width: 550px;
+    max-height: 65px;
+  }
+  /*--------------- main#contact ---------------*/
 }
 /* } */
 /* end home page large */

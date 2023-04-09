@@ -21,6 +21,7 @@ body {
 .home-a img {
   width: 100%;
   border-radius: 5%;
+  margin-top: 1rem;
 }
 
 img#open-w {
@@ -97,7 +98,10 @@ h1.h-line {
 
   padding: 0.25rem;
   margin: 0;
-  color: #ff6666;
+  
+}
+h1.h-line2 {
+  display: none;
 }
 img.logo {
   grid-column: 4 / 5;
@@ -114,6 +118,8 @@ p.address {
   grid-row: 3 / 4;
   padding-left: 0.4rem;
   color: black;
+  position: sticky;
+  z-index: 50;
 }
 #fresh-order {
   grid-column: 1 / 2;
@@ -130,23 +136,22 @@ input {
   width: 100%;
 
 }
-.home-a img {
-  width: 100%;
-}
+
 /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 /* p#freshBtn:hover {
   transform: scale(
     1.5
   ); 
 } */
-.home-b {
-  margin-top: 2rem;
+/* .home-b {
+  padding-top: 3rem;
   background-color: #ffcc99;
   border-radius: 5%;
-}
+} */
 .home-b img {
   width: 100%;
   border-radius: 5%;
+  margin-top: 2rem;
 }
 .item-w {
   border: solid 3px #ff6666;
@@ -182,7 +187,7 @@ nav {
   margin-top: 4rem;
   width: 18rem;
 
-  z-index: 50;
+  z-index: 60;
 }
 /* a.active {
   z-index: 60;
@@ -311,8 +316,8 @@ div.social img {
   padding: 0.25rem;
 }
 a#ref {
-  color: #ff6666;
-  text-decoration: underline;
+text-decoration: underline !important;
+
   font-weight: 600;
 }
 
@@ -321,9 +326,7 @@ form label.choice {
   font-size: 1rem;
   padding: 0.75rem 0;
 }
-label.choice {
 
-}
 fieldset {
   margin: 2rem 0.25rem;
   border: 3px solid #ffcc99;
@@ -338,16 +341,7 @@ input.submit {
  width: 100%;
  border-color: transparent;
 }
-main {
 
-    /* /* display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
-    display: grid; */
-  /* grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto); */
-}
 div.sidebar2 {
   width: 350px;
   Height: 700px;
