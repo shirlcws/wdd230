@@ -57,7 +57,17 @@
   <p class="phone">801-135-4281</p>
   <p class="address">123 Sunnyview Ln.<br />Carlsbad, CA 92008</p></header>
    <main id="fresh">
-    
+    <div>
+    <h2 id="complete-o">Finished Orders</h2>
+    <form action="order"> <fieldset class="form-info">
+      <legend>Ordered Items appear here </legend>
+     </fieldset>
+
+
+      
+    </form>
+    </div>
+    <div>
     <h2>Place Order Here</h2>
        
         <form id="form" method="get" action="thankyou.html">
@@ -85,7 +95,8 @@
             /></label>
              </fieldset>
              <fieldset class="cust-info">
-              <label for="messageArea">Any Customer Input:</label>
+              <legend>Customer Input</legend>
+              <label for="messageArea">Note:</label>
            
   
             <textarea
@@ -98,6 +109,7 @@
           <input type="hidden" id="timeStamp" name="timeStamp" />
           <input type="submit" value="Submit Order" class="submit" />
         </form>
+      </div>
     </main>
 <footer><div class="social">
   <div class="social-f">
@@ -124,5 +136,7 @@
 </p></footer>
 <script src="script/project.js"></script>
 <script src="script/nav.js"></script>
+<script src="script/orderstamp.js"></script>
+<script src="script/menu.js"></script>
 </body>
 </html>
