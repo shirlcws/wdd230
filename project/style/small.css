@@ -350,3 +350,8 @@ div.sidebar2 {
   z-index: 100;
   padding: 50px;
 }
+/* ******************** main#home *****************/
+
+div.map {
+  width: 100%;
+}
