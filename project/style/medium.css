@@ -18,11 +18,10 @@
   }
   p.phone {
     grid-column: 1 / 3;
-  
   }
   p.address {
     grid-column: 3 / 5;
-   
+
     padding-left: 0.5rem;
   }
   .container {
@@ -34,9 +33,8 @@
     background-color: white;
   }
   img.logo {
-       margin-left: 2rem;
-            
-      }
+    margin-left: 2rem;
+  }
 
   .item {
     background-color: steelblue;

@@ -14,28 +14,27 @@ fetchAndRenderFruits();
 const displayFruits = (fruits) => {
   const cards = document.querySelector("div.cards"); //selects an output container element
 
-fruits.forEach((fruit) => {
+  fruits.forEach((fruit) => {
     //Create elements to add to div.cards element
     let card = document.createElement("section");
-    let name = document.createElement("h2")
+    let name = document.createElement("h2");
     let id = document.createElement("p");
     let nutritions = document.createElement("p");
 
     // Build h2 content to show 7 fields, fruit name, id, nutrition.
     h2.textContent = `${fruit.name} ${fruit.id} ${fruit.nutritions}`;
-    fruit.nutritions = document.createElement("carbohydrates, protein, fat, calories, sugar");
+    fruit.nutritions = document.createElement(
+      "carbohydrates, protein, fat, calories, sugar"
+    );
     p.nutitions = document.createElement("protein");
     p.nutritions = document.createElement(fat);
     p.nutritions = document.createElement(calories);
     p.nutritions = document.createElement(sugar);
-// Append the section(card) with the created elements
-card.appendChild(name);
-card.appendChild(id);
-card.appendChild(nutrition);
+    // Append the section(card) with the created elements
+    card.appendChild(name);
+    card.appendChild(id);
+    card.appendChild(nutrition);
 
-cards.appendChild(card);
-}); // end of forEach loop
-
-
+    cards.appendChild(card);
+  }); // end of forEach loop
 }; // end of function expression
-

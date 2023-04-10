@@ -8,76 +8,75 @@
     <meta
       name="Bountiful Foods"
       content="Order organic fruits | vegetables | drinks| made to order in the Carlsbad area"
-      />
-     <link rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-<link rel="stylesheet" href="style/small.css" />
-<link rel="stylesheet" href="style/medium.css" />
-<link rel="stylesheet" href="style/large.css" />
-<!-- fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,800;1,200;1,300;1,500&display=swap"
-  rel="stylesheet"
-/>
-<link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style/small.css" />
+    <link rel="stylesheet" href="style/medium.css" />
+    <link rel="stylesheet" href="style/large.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,800;1,200;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <nav>
+      <!-- <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button> -->
+      <ul id="primaryNav">
+        <li>
+          <a class="active" href="fresh.html">Order fresh</a>
+        </li>
+        <li>
+          <a href="index.html">home</a>
+        </li>
 
-</head>
-<body>
-  <nav>
-    <!-- <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button> -->
-    <ul id="primaryNav">
-      <li>
-        <a class="active" href="fresh.html">Order fresh</a>
-      </li>
-      <li>
-        <a href="index.html">home</a>
-      </li>
-      
-      <li>
-        <a href="aboutus.html">About Us</a>
-      </li>
-     
-    </ul> 
-  </nav>
-  <header>  <button id="hamburgerBtn">
-    <span class="Btn-o">&#9776;</span><span>X</span>
-  </button>
+        <li>
+          <a href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <button id="hamburgerBtn">
+        <span class="Btn-o">&#9776;</span><span>X</span>
+      </button>
 
-  <a href="index.html"
-    ><img
-      class="logo"
-      src="images/fresh-logosvg.webp"
-      alt="Bountiful Fresh site logo with fruit bowl"
-  /></a>
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="images/fresh-logosvg.webp"
+          alt="Bountiful Fresh site logo with fruit bowl"
+      /></a>
 
-  <h1 class="h-line">Bountiful Fresh</h1>
-  <p class="phone">801-135-4281</p>
-  <p class="address">123 Sunnyview Ln.<br />Carlsbad, CA 92008</p></header>
-   <main id="fresh">
-    <div>
-    <h2 id="complete-o">Finished Orders</h2>
-    <form action="order"> <fieldset class="form-info">
-      <legend>Ordered Items appear here </legend>
-     </fieldset>
+      <h1 class="h-line">Bountiful Fresh</h1>
+      <p class="phone">801-135-4281</p>
+      <p class="address">123 Sunnyview Ln.<br />Carlsbad, CA 92008</p>
+    </header>
+    <main id="fresh">
+      <div>
+        <h2 id="complete-o">Finished Orders</h2>
+        <form action="order">
+          <fieldset class="form-info">
+            <legend>Ordered Items appear here</legend>
+          </fieldset>
+        </form>
+      </div>
+      <div>
+        <h2>Place Order Here</h2>
 
-
-      
-    </form>
-    </div>
-    <div>
-    <h2>Place Order Here</h2>
-       
         <form id="form" method="get" action="thankyou.html">
           <fieldset class="form-info">
             <legend>Customer Information *required</legend>
             <label class="cust-info"
               >First Name* <input type="text" name="f-name" required
             /></label>
-             <label class="cust-info"
-              ><br>Email*
+            <label class="cust-info"
+              ><br />Email*
               <input
                 type="email"
                 name="email"
@@ -85,7 +84,7 @@
                 required
             /></label>
             <label class="cust-info"
-              ><br>Cell Phone*
+              ><br />Cell Phone*
               <input
                 type="tel"
                 name="phone"
@@ -93,12 +92,11 @@
                 placeholder="123-456-7890"
                 required
             /></label>
-             </fieldset>
-             <fieldset class="cust-info">
-              <legend>Customer Input</legend>
-              <label for="messageArea">Note:</label>
-           
-  
+          </fieldset>
+          <fieldset class="cust-info">
+            <legend>Customer Input</legend>
+            <label for="messageArea">Note:</label>
+
             <textarea
               id="messageArea"
               name="messageArea"
@@ -111,32 +109,31 @@
         </form>
       </div>
     </main>
-<footer><div class="social">
-  <div class="social-f">
-    <a href="https://www.facebook.com/" target="_blank"
-      ><img src="images/Icon-awesome-facebook-f.svg" alt="Facebook icon"
-    /></a>
-  </div>
-  <div class="social-p">
-    <a href="https://twitter.com/home" target="_blank"
-      ><img src="images/Icon-feather-twitter.png" alt="Twitter icon"
-    /></a>
-  </div>
-  <div class="social-i">
-    <a href="https://www.instagram.com/" target="_blank"
-      ><img src="images/Icon-simple-instagram.png" alt="Instagram icon"
-    /></a>
-  </div>
-</div>
-<!-- end social class -->
+    <footer>
+      <div class="social">
+        <div class="social-f">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="images/Icon-awesome-facebook-f.svg" alt="Facebook icon"
+          /></a>
+        </div>
+        <div class="social-p">
+          <a href="https://twitter.com/home" target="_blank"
+            ><img src="images/Icon-feather-twitter.png" alt="Twitter icon"
+          /></a>
+        </div>
+        <div class="social-i">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="images/Icon-simple-instagram.png" alt="Instagram icon"
+          /></a>
+        </div>
+      </div>
+      <!-- end social class -->
 
-<p>
-  &copy; 2023 | Last modified:<span id="demo"></span
-  >
-</p></footer>
-<script src="script/project.js"></script>
-<script src="script/nav.js"></script>
-<script src="script/orderstamp.js"></script>
-<script src="script/menu.js"></script>
-</body>
+      <p>&copy; 2023 | Last modified:<span id="demo"></span></p>
+    </footer>
+    <script src="script/project.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/orderstamp.js"></script>
+    <script src="script/menu.js"></script>
+  </body>
 </html>

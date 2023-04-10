@@ -7,29 +7,29 @@ const captionDesc = document.querySelector("#figcap");
 //fetch apiurl response from openweathermap.org
 
 async function apiFetch() {
-    const apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=32.4207&lon=-104.2288&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;
+  const apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=32.4207&lon=-104.2288&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;
 
-//test in console
+  //test in console
 
-try {
+  try {
     const response = await fetch(apiURL);
     if (response.ok) {
-        const data = await response.json();
+      const data = await response.json();
 
-        console.log(data);//for testing call
-        displayResults(data);
-
+      console.log(data); //for testing call
+      displayResults(data);
     } else {
-        throw Error(await response.text());
+      throw Error(await response.text());
     }
+  } catch (error) {
+    console.log(error);
+  }
 
-}  catch (error) {
- console.log(error);
-}
+  apiFetch();
 
-apiFetch();
-
-function displayResults(weatherData) {
-    currentTemp.innerHTML =`<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-} 
+  function displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
+      0
+    )}</strong>`;
+  }
 }

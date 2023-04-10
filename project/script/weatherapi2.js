@@ -6,7 +6,7 @@ const captionDesc = document.querySelector("#figcap");
 const forecastTemp = document.querySelector("#forecast-temp");
 // The apiurl fetches response from openweathermap.org through a query of your choice
 async function apiFetch() {
- const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=32.4207&lon=-104.2288&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;
+  const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=32.4207&lon=-104.2288&units=imperial&APPID=76cce6c470ec11e978662301c7f58bae`;
 
   // The below testing script is how this differs from the prophet exercise
 
@@ -28,7 +28,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
-   humid.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`;
+  humid.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`;
   currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
     0
   )}</strong>`;
@@ -39,7 +39,4 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", wDesc);
   captionDesc.textContent = wDesc;
-  
-  }
-
-
+}
