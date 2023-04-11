@@ -24,10 +24,10 @@
 
     padding-left: 0.5rem;
   }
-  .container {
+  body {
     max-width: 60rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+   
     gap: 5px;
     padding: 1rem;
     background-color: white;
@@ -36,17 +36,16 @@
     margin-left: 2rem;
   }
 
-  .item {
-    background-color: steelblue;
-    height: 8rem;
-  }
-  .nav {
+ div.sect-1 {
+  grid-column: 1 / 2;
+ }
+  /* .nav {
     max-width: 30rem;
     max-height: 45rem;
     transform: translate3d(-600px, 0, 0);
     transition: transform 0.4s;
     padding: 0;
-  }
+  } */
   picture.home-b {
     margin-top: -10rem;
   }
@@ -58,4 +57,9 @@
   div.social {
     justify-content: space-evenly;
   }
+  
+  div#home-b {
+    grid-column: 1 / 2;
+    
+  } 
 }

@@ -254,6 +254,7 @@ nav ul.open {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: repeat(10, 1fr);
+  
 }
 a.active {
   border: 3px solid #ff6666;
@@ -283,6 +284,8 @@ div.sidebar {
   border-top: solid 19.5rem #ffcc99;
   background-color: white;
   display: none;
+  border-right: solid 1rem #ffcc99;
+    border-left: solid 5rem #ffcc99;
   /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
 }
 
@@ -342,11 +345,33 @@ div.sidebar2 {
   height: 700px;
   margin-top: 17.5rem;
   margin-right: 3rem;
-  z-index: 100;
-  padding: 50px;
+  z-index: 50;
+  
 }
 /* ******************** main#home *****************/
 
 div.map {
   width: 100%;
+}
+/* ******************** main#fresh *****************/
+main#fresh {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+form button {
+  padding: .5rem;
+  width: 100%;
+  border-radius: 5%;
+  background-color: #ffcc99;
+}
+
+.order {
+  width: 350px;
+  height: 820px;
+ 
+  padding-top: 2rem;
+  border-radius: 5%;
+  border: solid 2rem #ffcc99;
+  margin-top: 2rem;
+  background-color: white;
+  
 }

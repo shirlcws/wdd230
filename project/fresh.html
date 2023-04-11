@@ -58,20 +58,24 @@
       <p class="address">123 Sunnyview Ln.<br />Carlsbad, CA 92008</p>
     </header>
     <main id="fresh">
-      <div>
+      <section id="sidebar">
         <h2 id="complete-o">Finished Orders</h2>
-        <form action="order">
-          <fieldset class="form-info">
-            <legend>Ordered Items appear here</legend>
-          </fieldset>
+        <form id="form" method="get" action="click">
+          <div class="order">
+            <h3>Ordered Items appear here</h3>
+            <div id="order-here"></div>
+          </div>
         </form>
-      </div>
+      </section>
       <div>
         <h2>Place Order Here</h2>
 
-        <form id="form" method="get" action="thankyou.html">
+        <form id="form" method="get" action="">
           <fieldset class="form-info">
             <legend>Customer Information *required</legend>
+            <label class="drinks">
+              <p><span id="numDrinks"></span></p>
+            </label>
             <label class="cust-info"
               >First Name* <input type="text" name="f-name" required
             /></label>
@@ -93,10 +97,58 @@
                 required
             /></label>
           </fieldset>
+          <fieldset>
+            <legend>Pick Your Fruits</legend>
+
+            <label class="fruitOne"
+              >Fruit 1:
+              <select name="fruit">
+                <option value="">Please Select &#9662;</option>
+                <option value="software">Software Development</option>
+                <option value="creative">Creative Professional</option>
+                <option value="Info">Information Technology</option>
+                <option value="data">Data Professional</option>
+                <option value="construction">Construction</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="business">Business Professional</option>
+                <option value="security">Cyber Security</option>
+              </select> </label
+            ><br /><br />
+            <label class="fruitTwo"
+              >Fruit 2:
+              <select name="fruit">
+                <option value="">Please Select &#9662;</option>
+                <option value="software">Software Development</option>
+                <option value="creative">Creative Professional</option>
+                <option value="Info">Information Technology</option>
+                <option value="data">Data Professional</option>
+                <option value="construction">Construction</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="business">Business Professional</option>
+                <option value="security">Cyber Security</option>
+              </select> </label
+            ><br /><br />
+            <label class="fruitThree"
+              >Fruit 3:
+              <select name="fruit">
+                <option value="">Please Select &#9662;</option>
+                <option value="software">Software Development</option>
+                <option value="creative">Creative Professional</option>
+                <option value="Info">Information Technology</option>
+                <option value="data">Data Professional</option>
+                <option value="construction">Construction</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="business">Business Professional</option>
+                <option value="security">Cyber Security</option>
+              </select>
+            </label>
+          </fieldset>
           <fieldset class="cust-info">
             <legend>Customer Input</legend>
             <label for="messageArea">Note:</label>
-
+            <select id="orderDrinks" name="orderDrinks">
+              selected
+            </select>
             <textarea
               id="messageArea"
               name="messageArea"
@@ -104,11 +156,15 @@
               cols="32"
             ></textarea>
           </fieldset>
-          <input type="hidden" id="timeStamp" name="timeStamp" />
-          <input type="submit" value="Submit Order" class="submit" />
+          <!-- <input type="hidden" id="timeStamp" name="timeStamp" /> -->
+          <button onclick="myFunction()">
+            Submit Order <input type="hidden" id="timeStamp" name="timeStamp" />
+          </button>
+          <!-- <input type="submit" value="Submit Order" class="submit" /> -->
         </form>
       </div>
     </main>
+
     <footer>
       <div class="social">
         <div class="social-f">

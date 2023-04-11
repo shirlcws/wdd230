@@ -1,27 +1,27 @@
-document.getElementById("demo").innerHTML = document.lastModified;
+document.getElementById("data").innerHTML = document.lastModified;
 // Long hand method ... building day and month names from built-in date methods.
 const daynames = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday"
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
 ];
 const months = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 const d = new Date();
@@ -33,23 +33,24 @@ const year = d.getFullYear();
 // let seconds = d.getSeconds();
 let day = d.getDate();
 if (day < 10) {
-	day = `${day}`
+  day = `${day}`;
 }
 const fulldate = `${dayName}, ${day}  ${monthName} ${year}`;
 
 document.querySelector(".date").textContent = fulldate;
+//To check variables inside object oncomment code below on line 42
+//console.log(JSON.stringify(fulldate));
 
 // document.getElementById("dateStamp").value = d.toDateString();
 // document.getElementById("timeStamp").value = hours + " hours " + mins + " minutes " + seconds + " seconds";
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
+  document.getElementById("primaryNav").classList.toggle("open");
+  document.getElementById("hamburgerBtn").classList.toggle("open");
 }
 
-const x = document.getElementById('hamburgerBtn');
+const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
-
 
 // //get imgs attributed as data-src
 // //doe is from mdn web docs
@@ -119,5 +120,3 @@ x.onclick = toggleMenu;
 // if (today.getMonth() == 11 && today.getDate() > 25){
 // christmas.setFullYear(christmas.getFullYear());
 // }
-
-

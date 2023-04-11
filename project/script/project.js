@@ -38,4 +38,11 @@ const fulldate = `${dayName}, ${day}  ${monthName} ${year}`;
 
  //document.querySelector(".date").textContent = fulldate;
 
-   
+//  const num1 = 6;
+// const num2 = 3;
+
+// function numbers() {
+//   return num1 + num2;
+// }
+
+// console.log(numbers()); // 5  

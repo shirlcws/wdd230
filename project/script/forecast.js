@@ -17,9 +17,9 @@ displayResults(data);
  } else {
   throw Error(await response.text());
 }
-display error if response is not ok
+// display error if response is not ok
 
-display results
+// display results
 
 apiFetch();
 function displayResults(forecastData) {
@@ -31,4 +31,5 @@ function displayResults(forecastData) {
    weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", wDesc);
  captionDesc.textContent = wDesc;
+ }
  }

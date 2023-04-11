@@ -9,7 +9,7 @@ async function fetchAndRenderFruit() {
   // console.table(data.fruit);
   displayFruits(data.fruits);
 }
-fetchAndRenderFruits();
+fetchAndRenderFruit();
 
 const displayFruits = (fruits) => {
   const cards = document.querySelector("div.cards"); //selects an output container element

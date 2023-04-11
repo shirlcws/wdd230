@@ -28,12 +28,13 @@
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
+    <header>
+    
       <!-- <nav id="container">  -->
       <!-- <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button> -->
 
-      
-      <header>
+    
         <button id="hamburgerBtn">
           <span class="Btn-o">&#9776;</span><span>X</span>
         </button>
@@ -69,12 +70,12 @@
 
       <main id="home">
         <div class="sidebar">
-          <p> <strong>Choose it Your Way!</strong></p>
-         
+          <p><strong>Choose it Your Way!</strong></p>
+
           <!-- <p style="background-image: url('images/rayia-soderberg-grapefruit-unsplash.webp')"></p> -->
         </div>
-<h1 class="h-line2">Bountiful Fresh</h1>
-             <div>
+        <h1 class="h-line2">Bountiful Fresh</h1>
+        <div class="home">
           <p id="fresh-btn">
             <a class="fresh-t" href="fresh.html">🍎 Order Fresh 🥬</a>
           </p>
@@ -87,10 +88,9 @@
           /></picture>
         </div>
         <div>
-        
-        <!-- <label for="meeting-time">Choose a pick up time:</label> -->
+          <!-- <label for="meeting-time">Choose a pick up time:</label> -->
 
-        <!-- <input
+          <!-- <input
           type="datetime-local"
           id="pickup-time"
           name="pickup-time"
@@ -99,65 +99,60 @@
           max="202-03-30T00:00"
         /> -->
 
-        <div class="sect">
-          <h2>Order Here For Any Fresh Location</h2>
-          <p>
-            Bountiful Foods specializes in locally grown organic fruits and
-            vegetables, wherever possible from local farms. We deliver fresh to
-            you⏤coast to coast from Los Angeles to San Diego.
-          </p>
-        </div>
-        <div class="sect" id="weather-s">
-          <h3>Carlsbad, California<br>Current Weather</h3>
-          <div class="item-w" id="weather">
-            <p>Humidity <br /><span id="humid"></span> ﹪</p>
+          <div class="sect-1">
+            <h2>Order Here For Any Fresh Location</h2>
             <p>
-              Temp
-              <br /><span id="current-temp"></span> ℉
+              Bountiful Foods specializes in locally grown organic fruits and
+              vegetables, wherever possible from local farms. We deliver fresh
+              to you⏤coast to coast from Los Angeles to San Diego.
             </p>
-            <figure>
-              <img
-                src="https//openweathermap.org/img/w/0.png"
-                alt="weather icon"
-                id="weather-icon"
-                width="75"
-              />
-              <figcaption id="figcap"></figcaption>
-              <div>
-          <h3 id="Day1"> 3-Days Weather Forecast</h3>
-        </div>
-            </figure>
           </div>
-          <p>
-            Brought to you by
-            <a
-              class="weather-l"
-              href="https://openweathermap.org/"
-              target="_blank"
-              >OpenWeather</a
-            >
+          <div class="sect-2" id="weather-s">
+            <h3>Carlsbad, California<br />Current Weather</h3>
+            <div class="item-w" id="weather">
+              <p>Humidity <br /><span id="humid"></span> ﹪</p>
+              <p>
+                Temp
+                <br /><span id="current-temp"></span> ℉
+              </p>
+              <figure>
+                <img
+                  src="https//openweathermap.org/img/w/0.png"
+                  alt="weather icon"
+                  id="weather-icon"
+                  width="75"
+                />
+                <figcaption id="figcap"></figcaption>
+              </figure>
+            </div>
+            <p>
+              Brought to you by
+              <a
+                class="weather-l"
+                href="https://openweathermap.org/"
+                target="_blank"
+                >OpenWeather</a
+              >
+            </p>
+
+            <!-- <img id="open-w"src="images/OpenWeather-Negative-Logo RGB.jpg" alt="OpenWeather logo of sun"> -->
+          </div>
+          <div>
+            <h3 id="Day1">3-Days Weather Forecast</h3>
+          </div>
+
+          <p id="about-btn">
+            <a id="fresh-a" href="aboutus.html">🚚 About Us 🥤</a>
           </p>
-          
-          <!-- <img id="open-w"src="images/OpenWeather-Negative-Logo RGB.jpg" alt="OpenWeather logo of sun"> -->
+          <picture class="home-b"
+            ><img
+              src="images/sohaim-siddiquee-unsplash-lqcopy.webp"
+              alt="vw van food stand"
+              data-src="images/sohaim-siddiquee-unsplash.webp"
+              width="640"
+          /></picture>
         </div>
-        <div>
-          <h3 id="Day1"> 3-Days Weather Forecast</h3>
-        </div>
-
-
-        
-        <p id="about-btn">
-          <a id="fresh-a" href="aboutus.html">🚚 About Us 🥤</a>
-        </p>
-        <picture class="home-b"
-          ><img
-            src="images/sohaim-siddiquee-unsplash-lqcopy.webp"
-            alt="vw van food stand"
-            data-src="images/sohaim-siddiquee-unsplash.webp"
-            width="640"
-        /></picture>
-      </div>
-        <div class="sect">
+        <div class="sect-3">
           <h2>Coast To Coast</h2>
           <p>
             Our main facility is located in the quaint coastal city of Carlsbad,
@@ -165,15 +160,10 @@
             meeting the needs of the locals, while catering to the many tourist
             who flock to the sandy beaches that border this beautiful city.
           </p>
-
-        <!-- <div class="item">Item 4</div>
-      <div class="item">Item 5</div>
-      <div class="item">Item 6</div>
-      <div class="item">Item 7</div>
-      <div class="item">Item 8</div>
-      <div class="item">Item 9</div> -->
+       </div>
+       
       </main>
-    </div>
+    <!-- </div> -->
     <!-- Footer -->
     <footer>
       <div class="social">
@@ -195,10 +185,12 @@
       </div>
       <p>
         &copy; 2023 | Last modified:<span id="demo"></span
-        ><a id="ref" href="references.html"> &nbsp;references</a>
+        ><a id="ref" href="references.html" target="_blank">
+          &nbsp;references</a
+        >
       </p>
     </footer>
-<!-- end Footer -->
+    <!-- end Footer -->
     <script src="script/project.js"></script>
     <!-- <script src="script/orderStamp.js"></script> -->
     <!-- <script src="script/weatherapi.js"></script> -->
@@ -206,6 +198,7 @@
     <script src="script/forecast.js"></script>
     <script src="script/lazyload.js"></script>
     <script src="script/nav.js"></script>
+    <script src="script/numorders.js"></script>
 
     <!-- <label for="meeting-time">Choose a pick up time:</label>
     <input
